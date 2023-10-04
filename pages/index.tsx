@@ -1,6 +1,5 @@
 import { Configure } from 'react-instantsearch-dom'
 
-import { Banner } from '@/components/banner/banner'
 import CarouselHome from '@/components/carousel/carousel-home'
 import { ProductCardHitShowcase } from '@/components/product-card/product-card-hit'
 import { ProductsShowcase } from '@/components/products-showcase/products-showcase'
@@ -9,7 +8,6 @@ import {
   getStaticPropsPage,
   SearchPageLayout,
 } from '@/layouts/search-page-layout'
-// import BannerImage from '@/public/static/images/home/banner.jpg'
 
 export default function Home(props: SearchPageLayoutProps) {
   return (
