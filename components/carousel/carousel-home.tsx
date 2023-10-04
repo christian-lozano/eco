@@ -27,7 +27,6 @@ export default function CarouselHome() {
         <Carousel
           // autoplay={true}
           autoplay={true}
-          numberpara={400}
           autoplayInterval={10000}
           wrapAround={true}
           withoutControls={true}
@@ -68,7 +67,6 @@ export default function CarouselHome() {
       <div className="   md:block md:pt-16 ">
         <Carousel
           autoplay={true}
-          numberpara={400}
           autoplayInterval={10000}
           wrapAround={true}
           withoutControls={true}
