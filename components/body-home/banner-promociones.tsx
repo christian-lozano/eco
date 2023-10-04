@@ -1,63 +1,81 @@
 import React from 'react'
 
-const productosRecienLlegados = [
-  {
-    marca: 'Adidas',
-    modelo: 'Zapatillas Forum Bonega Blanco Originals',
-    img: 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/621315/01/mod01/fnd/EEA/fmt/png/Camiseta-BETTER-CLASSICS-para-hombre',
-  },
-  {
-    marca: 'Adidas',
-    modelo: 'Zapatillas Forum Bonega Blanco Originals',
-    img: 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/621436/01/mod01/fnd/EEA/fmt/png/Chaqueta-corta-textil-DARE-TO',
-  },
-  {
-    marca: 'Nike',
-    imgProduct: 'https://picsum.photos/246/240?random=5',
-    modelo: 'Zapatillas Forum Bonega Blanco Originals',
-    img: 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/621291/01/mod01/fnd/EEA/fmt/png/Camisa-Downtown-de-pana-para-mujer',
-  },
-  {
-    marca: 'Puma',
-    modelo: 'Zapatillas Forum Bonega Blanco Originals',
-    img: 'https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/621429/01/mod01/fnd/EEA/fmt/png/Camiseta-de-manga-larga-DARE-TO-para-mujer',
-  },
-]
+const imgSection = {
+  imgMd:
+    'https://cdn.sanity.io/images/qa41whrn/prod/ee9f2445f6812ee263c1972d8a03f37d1078ad9d-1536x1536.jpg?w=720&q=80&auto=format',
+  imgXl:
+    'https://cdn.sanity.io/images/qa41whrn/prod/45b67822ba8ef9f1be6d5ed0c0937592fbbc2e0d-1440x500.jpg?w=2160&q=80&auto=format',
+}
 export function BannerPromociones() {
   return (
-    <div className="py-16 ">
-      <div className=" mx-10 px-6  md:px-12 xl:px-0">
-        <h2 className="xl:text-3xl  text-xl text-center py-10 font-bold">
-          NUEVOS INGRESOS DE ADIDAS
-        </h2>
-        <div className="mx-auto grid gap-y-10 gap-6 md:gap-y-16  lg:w-full 2xl:grid-cols-4 laptop:grid-cols-3  lg:grid-cols-2 md:grid-cols-2 grid-cols-1 justify-items-center">
-          {productosRecienLlegados.map((el, index) => (
-            <div key={index}>
-              <div className=" hover:border-black hover:dark:border-white dark:rounded-sm  delay-100 ease-linear    dark:border-[var(--dark-mode)]   border border-spacing:[1px] border-transparent">
-                <div className="">
-                  <div className="flex justify-center w-full   relative ">
-                    {' '}
-                    <img src={el.img} alt="" className="rounded-t-xl" />
-                  </div>
-                  <div className="dark:bg-[var(--dark-mode)] ">
-                    <div className="mb-1 flex items-center justify-between">
-                      <div
-                        color="blue-gray"
-                        className="text-base font-medium dark:text-white"
-                      >
-                        {el.marca}
-                      </div>
-                    </div>
-                    <div className="font-semibold text-sm   opacity-75 mb-1 dark:text-white">
-                      {el.modelo}
-                    </div>
+    <div className="  flex items-center">
+      <section
+        className={`w-full bg-cover bg-center py-8 pb-14 2xl:py-40 xl:py-40 lg:py-30 md:py-20`}
+      >
+        <div className=" w-full text-center text-white relative">
+          <img
+            src={imgSection.imgXl}
+            className="w-full h-full hidden md:hidden  lg:block laptop:block 2xl:block"
+            alt=""
+          />
+          <img
+            src={imgSection.imgMd}
+            className="w-full h-full block md:block laptop:hidden laptop:hidden laptop:hidden"
+            alt=""
+          />
+          {/* desktop */}
+          <div className="absolute top-0 w-full h-full  hidden md:hidden  laptop:block xl:block 2xl:block">
+            <div className="container h-full w-full flex-col  flex justify-center items-end pl-20">
+              <div className="w-3/5 md:w-3/5 2xl:w-full flex flex-col items-start ">
+                <div className="w-full ">
+                  <h1 className="xl:text-4xl md:text-3xl 2xl:text-6xl font-bold text-left py-5 ">
+                    Nuevos Ingresos
+                  </h1>
+                </div>
+                <div className="w-full flex justify-start  ">
+                  <div className="flex justify-around ">
+                    <span
+                      href="#"
+                      className="text-black bg-white p-3  md:p-2 font-bold mr-6  text-sm 2xl:text-base"
+                    >
+                      Tienda Hombre
+                    </span>
+
+                    <span
+                      href="#"
+                      className="text-black bg-white p-3  md:p-2 font-bold mr-6 text-sm 2xl:text-base "
+                    >
+                      Tienda Mujer
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
+          {/* mobil */}
+          <div className=" top-0 w-full h-full  md:block laptop:hidden xl:hidden 2xl:hidden">
+            <div className=" h-full w-full flex-col  flex justify-center items-center ">
+              <div className="w-full flex flex-col items-center ">
+                <div className=" ">
+                  <h1 className="xl:text-4xl text-black text-xl md:text-3xl 2xl:text-6xl font-bold text-left py-5 ">
+                    FOREVER. CLASSIC.
+                  </h1>
+                </div>
+                <div className="w-full flex justify-center  ">
+                  <div className="flex justify-around w-full">
+                    <span className="text-white bg-black p-3 font-sans md:p-2 font-medium md:px-5 md:py-3   mr-6  text-sm 2xl:text-base">
+                      TIENDA HOMBRE
+                    </span>
+                    <span className="text-white bg-black p-3 font-sans md:p-2 font-medium md:px-5 md:py-3   mr-6 text-sm 2xl:text-base ">
+                      TIENDA MUJER
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   )
 }
