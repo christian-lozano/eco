@@ -1,6 +1,7 @@
 import { Configure } from 'react-instantsearch-dom'
 
 import { Banner } from '@/components/banner/banner'
+import CarouselHome from '@/components/carousel/carousel-home'
 import { ProductCardHitShowcase } from '@/components/product-card/product-card-hit'
 import { ProductsShowcase } from '@/components/products-showcase/products-showcase'
 import type { SearchPageLayoutProps } from '@/layouts/search-page-layout'
@@ -8,7 +9,7 @@ import {
   getStaticPropsPage,
   SearchPageLayout,
 } from '@/layouts/search-page-layout'
-import BannerImage from '@/public/static/images/home/banner.jpg'
+// import BannerImage from '@/public/static/images/home/banner.jpg'
 
 export default function Home(props: SearchPageLayoutProps) {
   return (
@@ -21,7 +22,7 @@ export default function Home(props: SearchPageLayoutProps) {
         userToken={undefined}
       />
 
-      <Banner
+      {/* <Banner
         size="xl"
         title="New<br />Collection"
         subtitle="Spring/summer 2021"
@@ -30,7 +31,8 @@ export default function Home(props: SearchPageLayoutProps) {
         fullWidth={true}
         overlay={true}
         classNameTitle="text-3xl font-normal tracking-wider leading-tight laptop:text-7xl"
-      />
+      /> */}
+      <CarouselHome />
 
       <ProductsShowcase
         title="New in shoes"
