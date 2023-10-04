@@ -29,7 +29,7 @@ export const NavTop = memo(function NavTop() {
 
         <div className="flex gap-48">
           <div className="hidden items-center gap-8 laptop:flex">
-            <Link
+            {/* <Link
               href="/support"
               title="Support"
               className="can-hover:transition-colors can-hover:hover:text-neutral-dark"
@@ -41,16 +41,16 @@ export const NavTop = memo(function NavTop() {
                 labelPosition="right"
                 classNameLabel="label-regular"
               />
-            </Link>
+            </Link> */}
             <Link
               href="/store-locator"
-              title="Find a store"
+              title="Ubicanos"
               className="can-hover:transition-colors can-hover:hover:text-neutral-dark"
               onClick={(e) => e.preventDefault()}
             >
               <IconLabel
                 icon={PinDropIcon}
-                label="Find a store"
+                label="Ubicanos"
                 labelPosition="right"
                 classNameLabel="label-regular"
               />
@@ -63,20 +63,20 @@ export const NavTop = memo(function NavTop() {
                 <IconLabel icon={PinDropIcon} label="Ubicanos" />
               </Button>
             </Tablet>
-            <Laptop>
+            {/* <Laptop>
               <Button title="Favorites">
                 <IconLabel icon={FavoriteIcon} />
               </Button>
-            </Laptop>
+            </Laptop> */}
 
-            <Button title="Account">
+            {/* <Button title="Account">
               <Tablet>
                 <IconLabel icon={PersonIcon} label="Account" />
               </Tablet>
               <Laptop>
                 <IconLabel icon={PersonIcon} />
               </Laptop>
-            </Button>
+            </Button> */}
 
             <Button title="Cart">
               <Tablet>
@@ -92,9 +92,9 @@ export const NavTop = memo(function NavTop() {
 
       <nav className="hidden laptop:block">
         <ul className="hidden gap-6 uppercase laptop:flex">
-          <NavItem label="Women" href="/catalog/Women" />
-          <NavItem label="Men" href="/catalog/Men" />
-          <NavItem label="Accessories" href="/catalog/Accessories" />
+          <NavItem label="Mujer" href="/catalog/Women" />
+          <NavItem label="Hombre" href="/catalog/Men" />
+          <NavItem label="Accesorios" href="/catalog/Accessories" />
         </ul>
       </nav>
     </div>
