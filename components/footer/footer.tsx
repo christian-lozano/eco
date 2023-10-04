@@ -2,6 +2,7 @@ import { memo } from 'react'
 
 import { Link } from '@ui/link/link'
 
+export type FooterProps = Record<string, unknown>
 const currentYear = new Date().getFullYear()
 export const Footer = memo(function Footer() {
   return (
