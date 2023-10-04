@@ -1,5 +1,6 @@
 import { Configure } from 'react-instantsearch-dom'
 
+import { BannerPromociones } from '@/components/body-home/banner-promociones'
 import { CategoriasGenero } from '@/components/body-home/categorias-genero'
 import CarouselHome from '@/components/carousel/carousel-home'
 import { ProductCardHitShowcase } from '@/components/product-card/product-card-hit'
@@ -35,20 +36,21 @@ export default function Home(props: SearchPageLayoutProps) {
       <CategoriasGenero />
 
       <ProductsShowcase
-        title="New in shoes"
+        title="Lo Nuevo en Zapatillas"
         indexId="shoes"
         query="shoes"
         hitComponent={ProductCardHitShowcase}
       />
+      <BannerPromociones />
       <ProductsShowcase
-        title="Spring/summer 2021"
+        title="Primavera / Verano 2023"
         indexId="spring-summer-2021"
         ruleContexts={['home-spring-summer-2021']}
         className="laptop:bg-gray-50"
         hitComponent={ProductCardHitShowcase}
       />
       <ProductsShowcase
-        title="Recommended for you"
+        title="Recomendado Para ti"
         indexId="recommended"
         query="jacket"
         hitComponent={ProductCardHitShowcase}
