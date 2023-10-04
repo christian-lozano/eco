@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from '../@ui/link/link'
+
 const imgSection = {
   imgMd:
     'https://cdn.sanity.io/images/qa41whrn/prod/ee9f2445f6812ee263c1972d8a03f37d1078ad9d-1536x1536.jpg?w=720&q=80&auto=format',
@@ -34,19 +36,17 @@ export function BannerPromociones() {
                 </div>
                 <div className="w-full flex justify-start  ">
                   <div className="flex justify-around ">
-                    <span
-                      href="#"
-                      className="text-black bg-white p-3  md:p-2 font-bold mr-6  text-sm 2xl:text-base"
-                    >
-                      Tienda Hombre
-                    </span>
+                    <Link href="#">
+                      <span className="text-black bg-white p-3  md:p-2 font-bold mr-6  text-sm 2xl:text-base">
+                        Tienda Hombre
+                      </span>
+                    </Link>
 
-                    <span
-                      href="#"
-                      className="text-black bg-white p-3  md:p-2 font-bold mr-6 text-sm 2xl:text-base "
-                    >
-                      Tienda Mujer
-                    </span>
+                    <Link href="#">
+                      <span className="text-black bg-white p-3  md:p-2 font-bold mr-6  text-sm 2xl:text-base">
+                        Tienda Mujer
+                      </span>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -63,12 +63,16 @@ export function BannerPromociones() {
                 </div>
                 <div className="w-full flex justify-center  ">
                   <div className="flex justify-around w-full">
-                    <span className="text-white bg-black p-3 font-sans md:p-2 font-medium md:px-5 md:py-3   mr-6  text-sm 2xl:text-base">
-                      TIENDA HOMBRE
-                    </span>
-                    <span className="text-white bg-black p-3 font-sans md:p-2 font-medium md:px-5 md:py-3   mr-6 text-sm 2xl:text-base ">
-                      TIENDA MUJER
-                    </span>
+                    <Link href="#">
+                      <span className="text-white bg-black p-3 font-sans md:p-2 font-medium md:px-5 md:py-3   mr-6  text-sm 2xl:text-base">
+                        TIENDA HOMBRE
+                      </span>
+                    </Link>
+                    <Link href="#">
+                      <span className="text-white bg-black p-3 font-sans md:p-2 font-medium md:px-5 md:py-3   mr-6 text-sm 2xl:text-base ">
+                        TIENDA MUJER
+                      </span>
+                    </Link>
                   </div>
                 </div>
               </div>
