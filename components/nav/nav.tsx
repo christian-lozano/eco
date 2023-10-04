@@ -11,7 +11,7 @@ export function Nav() {
     <nav>
       <NavHome />
       <NavTop />
-      <NavBottom /> 
+      <NavBottom />
     </nav>
   )
 }

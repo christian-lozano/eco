@@ -337,7 +337,7 @@ const dataHeader = [
   },
 ]
 export function NavHome() {
-  const handleHover = (e, index) => {
+  const handleHover = (e: string[], index: number) => {
     setActiveHoverMenuNav(index)
     document
       .getElementById('navMenuDesktop')
