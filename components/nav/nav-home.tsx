@@ -340,6 +340,7 @@ export function NavHome() {
   const [hoverMenu, setHoverMenu] = useState(dataHeader[0].infoNav)
   const [rotateArrow, setRotateArrow] = useState('')
   const [activeHoverMenuNav, setActiveHoverMenuNav] = useState(0)
+  const [activeHover, setActiveHover] = useState('hidden')
   const handleHover = (e: string[], index: number) => {
     setActiveHoverMenuNav(index)
     document
@@ -390,7 +391,7 @@ export function NavHome() {
               <li key={i}>
                 <a
                   href="#"
-                  className=" xl:text-xs border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
+                  className="xl:text-xs border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
                 >
                   {element}
                 </a>

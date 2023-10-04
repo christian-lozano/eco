@@ -5,7 +5,8 @@
     "algolia/typescript",
     "next",
     "next/core-web-vitals",
-    "prettier"
+    "prettier",
+    
   ],
   "plugins": ["unused-imports"],
   "globals": { "React": true, "JSX": true },

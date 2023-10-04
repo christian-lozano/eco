@@ -1,5 +1,4 @@
 import { NavBottom } from './nav-bottom'
-import { NavHome } from './nav-home'
 import { NavTop } from './nav-top'
 
 /* ---------------------------------*/
@@ -9,7 +8,7 @@ import { NavTop } from './nav-top'
 export function Nav() {
   return (
     <nav>
-      <NavHome />
+      {/* <NavHome /> */}
       <NavTop />
       <NavBottom />
     </nav>
