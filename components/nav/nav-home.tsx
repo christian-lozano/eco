@@ -337,6 +337,9 @@ const dataHeader = [
   },
 ]
 export function NavHome() {
+  const [hoverMenu, setHoverMenu] = useState(dataHeader[0].infoNav)
+  const [rotateArrow, setRotateArrow] = useState('')
+  const [activeHoverMenuNav, setActiveHoverMenuNav] = useState(0)
   const handleHover = (e: string[], index: number) => {
     setActiveHoverMenuNav(index)
     document
@@ -435,9 +438,7 @@ export function NavHome() {
       </div>
     )
   }
-  const [hoverMenu, setHoverMenu] = useState(dataHeader[0].infoNav)
-  const [rotateArrow, setRotateArrow] = useState()
-  const [activeHoverMenuNav, setActiveHoverMenuNav] = useState()
+
   return (
     <nav>
       <div>
