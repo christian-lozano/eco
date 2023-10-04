@@ -60,7 +60,7 @@ export const NavTop = memo(function NavTop() {
           <div className="flex items-center gap-6 laptop:gap-3">
             <Tablet>
               <Button title="Ubicanos">
-                <IconLabel icon={PinDropIcon} label="Stores" />
+                <IconLabel icon={PinDropIcon} label="Ubicanos" />
               </Button>
             </Tablet>
             <Laptop>
