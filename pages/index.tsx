@@ -1,5 +1,6 @@
 import { Configure } from 'react-instantsearch-dom'
 
+import { CategoriasGenero } from '@/components/body-home/categorias-genero'
 import CarouselHome from '@/components/carousel/carousel-home'
 import { ProductCardHitShowcase } from '@/components/product-card/product-card-hit'
 import { ProductsShowcase } from '@/components/products-showcase/products-showcase'
@@ -31,6 +32,7 @@ export default function Home(props: SearchPageLayoutProps) {
         classNameTitle="text-3xl font-normal tracking-wider leading-tight laptop:text-7xl"
       /> */}
       <CarouselHome />
+      <CategoriasGenero />
 
       <ProductsShowcase
         title="New in shoes"
