@@ -11,9 +11,7 @@ import { Dev } from '@dev/dev'
 /// #endif
 
 import { Banner } from '@/components/banner/banner'
-
-import '@/styles/_index.css'
-import { Footer } from '@/components/footer/footer'
+import type { FooterProps } from '@/components/footer/footer'
 import type { HeaderProps } from '@/components/header/header'
 import { Loader } from '@/components/loader/loader'
 import { Overlay } from '@/components/overlay/overlay'
@@ -21,9 +19,17 @@ import { AppLayout } from '@/layouts/app-layout'
 import { gaTrackingId, isDev, isProd } from '@/utils/env'
 import { scrollToTop } from '@/utils/scrollToTop'
 
+import '@/styles/_index.css'
+
 export const Header = dynamic<HeaderProps>(() =>
   import(/* webpackChunkName: 'common' */ '@/components/header/header').then(
     (mod) => mod.Header
+  )
+)
+
+export const Footer = dynamic<FooterProps>(() =>
+  import(/* webpackChunkName: 'common' */ '@/components/footer/footer').then(
+    (mod) => mod.Footer
   )
 )
 
