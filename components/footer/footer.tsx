@@ -48,7 +48,7 @@ export const Footer = memo(function Footer() {
           </li>
           <li>
             <Link href="/contact" title="Contactanos" className="block p-4">
-              Contact
+              Contactanos
             </Link>
           </li>
         </ul>
