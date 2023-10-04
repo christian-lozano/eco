@@ -38,7 +38,7 @@ export const Footer = memo(function Footer() {
         <ul className="text-white text-center laptop:hidden">
           <li>
             <Link href="/" title="Home" className="block p-4">
-              Home
+              Inicio
             </Link>
           </li>
           <li>
