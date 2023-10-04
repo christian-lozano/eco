@@ -12,14 +12,15 @@ import { Dev } from '@dev/dev'
 
 import { Banner } from '@/components/banner/banner'
 import type { FooterProps } from '@/components/footer/footer'
+
+import '@/styles/_index.css'
+import { FooterHome } from '@/components/footer/footer-home'
 import type { HeaderProps } from '@/components/header/header'
 import { Loader } from '@/components/loader/loader'
 import { Overlay } from '@/components/overlay/overlay'
 import { AppLayout } from '@/layouts/app-layout'
 import { gaTrackingId, isDev, isProd } from '@/utils/env'
 import { scrollToTop } from '@/utils/scrollToTop'
-
-import '@/styles/_index.css'
 
 export const Header = dynamic<HeaderProps>(() =>
   import(/* webpackChunkName: 'common' */ '@/components/header/header').then(
@@ -78,6 +79,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
       </AnimatePresence>
 
       <Footer />
+      <FooterHome />
 
       <Loader layout={isCatalogPage ? 'bar' : 'overlay'} />
       <Overlay />
