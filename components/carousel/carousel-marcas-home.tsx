@@ -43,7 +43,7 @@ export function CarouselMarcasHome() {
         <div className="grid grid-cols-5 w-full  my-10 justify-items-center">
           {marcas.map((el, i) => (
             <Link key={i} href={el.url} className="border-indigo-600">
-              <div className="h-24 w-24 flex items-center border ">
+              <div className="h-24 w-24 flex items-center  border ">
                 <img src={el.value} alt="" />
               </div>
             </Link>
@@ -67,7 +67,11 @@ export function CarouselMarcasHome() {
           // slideCount={indiceSlider}
         >
           {marcas.map((el, i) => (
-            <Link key={i} href={el.url} className="border-indigo-600">
+            <Link
+              key={i}
+              href={el.url}
+              className="border-indigo-600 flex justify-center"
+            >
               <div className="h-24 w-24 flex items-center justify-center border ">
                 <img src={el.value} alt="" />
               </div>
