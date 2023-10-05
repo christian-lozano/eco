@@ -59,7 +59,7 @@ export function ProductImage({ src, alt = '', className }: ProductImageProps) {
       <img
         src={src}
         alt={alt}
-        layout="responsive"
+        // layout="responsive"
         className={classNames(
           'transition-all duration-2000 ease-out-expo can-hover:group-hover:scale-110'
           // {
