@@ -24,7 +24,7 @@ export const NavTop = memo(function NavTop() {
   const [openCart, setOpen] = useState(false)
 
   const openDrawer = () => setOpen(true)
-  const setOpenCart = () => setOpen(false)
+
   return (
     <div className="flex flex-col px-4 py-2 border-b border-neutral-light laptop:mx-20 laptop:px-0 laptop:pt-8 laptop:pb-0 laptop:mb-5">
       <div className="flex justify-between w-full gap-3 laptop:mb-8">
