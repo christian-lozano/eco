@@ -65,23 +65,17 @@ export default class MyDocument extends Document {
             content="Shop the latest fashion online"
           />
           <meta property="og:site_name" content="Spencer and Williams" />
-          <meta
-            property="og:url"
-            content="https://algolia-pwa-ecom-ui-template.netlify.app"
-          />
+          <meta property="og:url" content="https://www.fritzsportsac.com/" />
           <meta
             property="og:image"
-            content="https://algolia-pwa-ecom-ui-template.netlify.app/static/images/socials/og.png"
+            content="https://e-commerce-renny.vercel.app/static/images/socials/og.png"
           />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
 
           {/* Twitter meta */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta
-            name="twitter:url"
-            content="https://algolia-pwa-ecom-ui-template.netlify.app"
-          />
+          <meta name="twitter:url" content="https://www.fritzsportsac.com/" />
           <meta name="twitter:title" content="Spencer and Williams" />
           <meta
             name="twitter:description"
@@ -89,7 +83,7 @@ export default class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="https://algolia-pwa-ecom-ui-template.netlify.app/static/images/socials/twitter.png"
+            content="https://e-commerce-renny.vercel.app/static/images/socials/twitter.png"
           />
 
           {/* Fonts */}
