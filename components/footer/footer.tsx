@@ -1,4 +1,3 @@
-import { Button } from '@material-tailwind/react'
 import { memo } from 'react'
 
 import { Link } from '@ui/link/link'
@@ -142,14 +141,7 @@ export const Footer = memo(function Footer() {
             />
           </div>
         </div>
-        <Button
-          children={undefined}
-          nonce={undefined}
-          onResize={undefined}
-          onResizeCapture={undefined}
-        >
-          Button
-        </Button>
+
         <p className="font-sans p-8 text-start md:text-center md:text-lg md:p-4 text-white dark:text-[var(--dark-mode)]">
           {currentYear} <Link href="#">Fritz Sport</Link>. Todos los Derechos
           Reservados.
