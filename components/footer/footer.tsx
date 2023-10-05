@@ -8,7 +8,7 @@ export const Footer = memo(function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-black font-sans dark:bg-white mt-20">
+    <footer className="bg-white font-sans dark:bg-white mt-20">
       <div className="container px-6 pt-12 mx-auto">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-1 sm:gap-y-10 lg:grid-cols-3">
           <div className="sm:col-span-2 flex flex-col justify-center items-center">
