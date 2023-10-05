@@ -58,7 +58,7 @@ export function CarouselMarcasHome() {
           withoutControls={true}
           adaptiveHeight={true}
           // zoomScale={1}
-          slidesToShow={2}
+          slidesToShow={3}
           enableKeyboardControls={true}
           // speed={100}
           // slideIndex={indiceSlider}
