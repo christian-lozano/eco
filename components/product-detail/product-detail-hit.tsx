@@ -13,7 +13,7 @@ export type ProductDetailHitProps = HitComponentProps<ProductHit>
 
 export function ProductDetailHit({ hit }: ProductDetailHitProps) {
   const product: ProductDetailProps = {
-    image: hit.image_urls[0],
+    image: hit.image_urls,
     label: hit.brand,
     title: hit.name,
     description: hit.description,

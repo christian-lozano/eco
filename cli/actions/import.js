@@ -22,7 +22,7 @@ async function importAction(
   ] = productsIndicesNames
 
   const productsIndexExists = await productsIndex.exists()
-  const productsQuerySuggestionsIndexExists =
+  con st productsQuerySuggestionsIndexExists =
     await productsQuerySuggestionsIndex.exists()
 
   if (productsIndexExists || productsQuerySuggestionsIndexExists) {

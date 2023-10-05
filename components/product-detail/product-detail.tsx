@@ -5,7 +5,6 @@ import { useCallback, useState } from 'react'
 
 import { ProductDescription } from '@/components/product/product-description'
 import { ProductFavorite } from '@/components/product/product-favorite'
-import { ProductImage } from '@/components/product/product-image'
 import { ProductLabel } from '@/components/product/product-label'
 import type { ProductPriceCurrency } from '@/components/product/product-price'
 import { ProductPrice } from '@/components/product/product-price'
@@ -18,8 +17,10 @@ import { ProductTitle } from '@/components/product/product-title'
 import { Button } from '@ui/button/button'
 import { IconLabel } from '@ui/icon-label/icon-label'
 
+import { ProductDetails } from '../product/product-detail'
+
 export type ProductDetailProps = {
-  image?: string
+  image?: string[]
   label?: string
   title?: string
   description?: string
@@ -79,10 +80,10 @@ export function ProductDetail({
       <div className="laptop:w-8/12">
         <div className="flex flex-col items-center bg-brand-black laptop:min-h-[500px]">
           {image && (
-            <ProductImage
+            <ProductDetails
               src={image}
               alt={title}
-              className="w-3/5 laptop:w-2/5"
+              className="w-5/5 laptop:w-2/5"
             />
           )}
         </div>
