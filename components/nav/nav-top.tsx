@@ -444,13 +444,10 @@ export const NavTop = memo(function NavTop() {
                       {/* <p className="text-sm text-gray-700 uppercase">Incluye igv</p> */}
                     </div>
                   </div>
-                  <Link
-                    href={'/carrito'}
-                    onClick={() => setOpenCart(!openCart)}
-                  >
-                    <button className="mt-6 w-full rounded-md bg-black py-1.5  text-blue-50 hover:bg-blue-gray-900 font-semibold">
+                  <Link href={'/carrito'} onClick={() => setOpen(!openCart)}>
+                    <span className="mt-6 w-full rounded-md bg-black py-1.5  text-blue-50 hover:bg-blue-gray-900 font-semibold">
                       COMPRAR AHORA
-                    </button>
+                    </span>
                   </Link>
                 </div>
               </div>
