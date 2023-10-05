@@ -32,7 +32,7 @@ function BreadcrumbComponent({ items, refine, createURL }: BreadcrumbProps) {
 
   const navItems = useMemo(() => {
     const arr = currentQuery ? items.slice(0) : items.slice(0, -1)
-    arr.unshift({ label: 'All', value: undefined })
+    arr.unshift({ label: 'Todos', value: undefined })
     return arr
   }, [items, currentQuery])
 
@@ -73,7 +73,7 @@ function BreadcrumbComponent({ items, refine, createURL }: BreadcrumbProps) {
 
         <div className="flex items-center">
           <span className="heading-4 mr-1">
-            {currentQuery ? `Search “${currentQuery}”` : currentItem?.label}
+            {currentQuery ? `Buscar “${currentQuery}”` : currentItem?.label}
           </span>
           <span className="subhead text-neutral-dark"> ({nbHits})</span>
           {Boolean(currentQuery) && (

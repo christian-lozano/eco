@@ -26,7 +26,7 @@ export function recentSearchesPluginCreator({
         templates: {
           ...source.templates,
           header() {
-            return <span className="aa-SourceHeaderTitle">Your Searches</span>
+            return <span className="aa-SourceHeaderTitle">Tus Búsquedas</span>
           },
           item({ item, components }) {
             return (
@@ -58,7 +58,7 @@ export function recentSearchesPluginCreator({
                   <button
                     type="button"
                     className="aa-ItemActionButton"
-                    title="Remove this search"
+                    title="Remover Búsqueda"
                     onClick={(event) => {
                       event.preventDefault()
                       event.stopPropagation()

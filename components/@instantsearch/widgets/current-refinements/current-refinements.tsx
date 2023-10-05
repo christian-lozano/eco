@@ -76,7 +76,7 @@ function CurrentRefinementsComponent({
           })}
         >
           <ClearRefinements className="body-bold text-brand-nebula can-hover:transition-colors can-hover:hover:text-nebula-light">
-            Clear all
+            Borrar Todo
           </ClearRefinements>
         </li>
       </ul>

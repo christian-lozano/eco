@@ -16,7 +16,7 @@ function ViewModesComponent() {
 
   return (
     <div className="flex items-center gap-1">
-      <div className="laptop:small-bold">Display</div>
+      <div className="laptop:small-bold">Vista</div>
 
       <Button
         title="View products as a grid"

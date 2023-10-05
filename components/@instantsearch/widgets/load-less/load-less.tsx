@@ -34,7 +34,7 @@ export function LoadLess({ hasPrevious, refinePrevious }: LoadLessProps) {
         disabled={isSearchStalled}
         onClick={handleGoToFirstPage}
       >
-        Go to first page
+        Ir a la primera pagina
       </Button>
 
       <Button
@@ -42,7 +42,7 @@ export function LoadLess({ hasPrevious, refinePrevious }: LoadLessProps) {
         disabled={isSearchStalled}
         onClick={refinePrevious}
       >
-        {isSearchStalled ? 'Loading' : 'Load previous'}
+        {isSearchStalled ? 'Cargando' : 'Cargar anterior'}
       </Button>
     </div>
   )

@@ -21,7 +21,7 @@ function ToggleFiltersComponent() {
       >
         <IconLabel
           icon={FilterIcon}
-          label={`${desktopExpanded ? 'Hide' : 'Show'} filters`}
+          label={`${desktopExpanded ? 'Remover' : 'Mostrar'} filtros`}
           labelPosition="left"
           classNameLabel="small-bold"
           classNameIcon="w-4 h-4"

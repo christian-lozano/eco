@@ -42,7 +42,7 @@ export function RefinementsPanelHeader() {
           <div className="flex items-center justify-between flex-grow">
             <IconLabel
               icon={FilterIcon}
-              label="Filter &amp; Sort"
+              label="Filtrar &amp; Clasificar"
               labelPosition="right"
               classNameLabel="heading-4"
               classNameIcon="w-8 h-8"
@@ -58,7 +58,7 @@ export function RefinementsPanelHeader() {
           <div className="flex-grow flex items-center justify-between">
             <IconLabel
               icon={FilterIcon}
-              label="Filters"
+              label="Filtrar"
               labelPosition="right"
               classNameLabel="body-regular"
               className="gap-1 heading-5"
@@ -72,8 +72,8 @@ export function RefinementsPanelHeader() {
               <IconLabel
                 icon={refinementsPanelsExpanded ? RemoveIcon : AddIcon}
                 label={`${
-                  refinementsPanelsExpanded ? 'Collapse' : 'Expand'
-                } all`}
+                  refinementsPanelsExpanded ? 'Colapsar' : 'Expandir'
+                } Todo`}
                 labelPosition="left"
                 classNameLabel="body-regular"
               />
@@ -83,7 +83,7 @@ export function RefinementsPanelHeader() {
       </div>
 
       <Tablet>
-        <CurrentRefinements header="Applied filters" className="mb-6" />
+        <CurrentRefinements header="Filtros aplicados" className="mb-6" />
       </Tablet>
     </header>
   )

@@ -31,7 +31,7 @@ function SearchButton({
       hidden={Boolean(!props.state?.query)}
     >
       <Button type="tertiary" className="h-full" onClick={onClick}>
-        Search
+        Buscar
       </Button>
     </div>
   )

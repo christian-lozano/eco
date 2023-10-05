@@ -17,7 +17,7 @@ function SeeResultsButtonComponent({ nbHits, onClick }: SeeResultsButtonProps) {
       className="!px-2 flex-grow"
       onClick={onClick}
     >
-      See {nbHits.toLocaleString()} Product{nbHits > 1 && 's'}
+      Ver {nbHits.toLocaleString()} Producto{nbHits > 1 && 's'}
     </Button>
   )
 }

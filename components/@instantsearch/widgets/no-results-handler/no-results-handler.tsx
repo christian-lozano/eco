@@ -21,17 +21,17 @@ const NoResults = memo(
       <div className="laptop:my-10 laptop:ml-[10%]">
         <h4 className="mb-6">
           <span className="text-sm font-normal text-neutral-dark laptop:text-brand-black laptop:heading-4">
-            Sorry, we found no results for{' '}
+            Lo sentimos, no encontramos resultados para
           </span>
           <span className="block mt-3 laptop:inline laptop:mt-0">
             “{query}”
           </span>
         </h4>
 
-        <p className="font-bold mb-2">Try the following:</p>
+        <p className="font-bold mb-2">Prueba lo siguiente:</p>
         <ul className="flex flex-col gap-2 list-disc list-inside">
           <li>
-            <span className="-ml-1.5">Check your spelling</span>
+            <span className="-ml-1.5">Corrige tu ortografía</span>
           </li>
           <NoResultsQuerySuggestions query={query} />
           <NoResultsCurrentRefinements />

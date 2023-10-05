@@ -18,15 +18,17 @@ function RelevantSortComponent({
       <span className="flex items-center gap-1">
         <Icon icon={InfoIcon} />
         {isRelevantSorted
-          ? 'We removed some search results to show you the most relevant ones.'
-          : 'Currently showing all results.'}
+          ? 'Eliminamos algunos resultados de búsqueda para mostrarte los más relevantes.'
+          : 'Mostrando todos los resultados.'}
       </span>
 
       <Button
         className="body-bold underline flex-shrink-0"
         onClick={() => refine(isRelevantSorted ? 0 : undefined)}
       >
-        {isRelevantSorted ? 'See all results' : 'See relevant results'}
+        {isRelevantSorted
+          ? 'Ver todos los resultados'
+          : 'Ver resultados relevantes'}
       </Button>
     </Pill>
   )

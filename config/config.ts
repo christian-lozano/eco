@@ -13,8 +13,8 @@ const refinementsLayoutAtom = atom<RefinementLayout>('panel')
 const refinements: Refinement[] = [
   {
     type: 'hierarchical',
-    header: 'Categories',
-    label: 'Category',
+    header: 'Categoría',
+    label: 'Categoría',
     isExpanded: true,
     options: {
       attributes: [
@@ -26,8 +26,8 @@ const refinements: Refinement[] = [
   },
   {
     type: 'list',
-    header: 'Brands',
-    label: 'Brand',
+    header: 'Marca',
+    label: 'Marca',
     options: {
       searchable: true,
       attribute: 'brand',
@@ -35,16 +35,16 @@ const refinements: Refinement[] = [
   },
   {
     type: 'price',
-    header: 'Price',
-    label: 'Price',
+    header: 'Precio',
+    label: 'Precio',
     options: {
       attribute: 'price.value',
     },
   },
   {
     type: 'size',
-    header: 'Sizes',
-    label: 'Size',
+    header: 'Tamaño',
+    label: 'Tamaño',
     options: {
       attribute: 'available_sizes',
       limit: 8,
@@ -52,7 +52,7 @@ const refinements: Refinement[] = [
   },
   {
     type: 'color',
-    header: 'Colors',
+    header: 'Color',
     label: 'Color',
     options: {
       attribute: 'color.filter_group',
@@ -69,8 +69,8 @@ const refinements: Refinement[] = [
   },
   {
     type: 'rating',
-    header: 'Rating',
-    label: 'Rating',
+    header: 'Popularidad',
+    label: 'Popularidad',
     options: {
       attribute: 'reviews.rating',
     },
@@ -78,9 +78,9 @@ const refinements: Refinement[] = [
 ]
 
 const sorts = [
-  { value: indexName, label: 'Most popular', isDefault: true },
-  { value: `${indexName}_price_asc`, label: 'Price Low to High' },
-  { value: `${indexName}_price_desc`, label: 'Price High to Low' },
+  { value: indexName, label: 'Mas Popular', isDefault: true },
+  { value: `${indexName}_price_asc`, label: 'Precio mas Bajo a Alto' },
+  { value: `${indexName}_price_desc`, label: 'Precio mas Alto a Bajo' },
 ]
 
 const breadcrumbAttributes = [

@@ -23,7 +23,7 @@ export function ProductDetailHit({ hit }: ProductDetailHitProps) {
     reviews: hit.reviews.count,
     price: hit.price.value,
     currency: {
-      symbol: hit.price.currency === 'EUR' ? '€' : '$',
+      symbol: hit.price.currency === 'USD' ? '$' : 'S/',
       position: hit.price.currency === 'EUR' ? 'suffix' : 'prefix',
     },
   }

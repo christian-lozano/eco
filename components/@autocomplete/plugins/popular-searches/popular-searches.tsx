@@ -46,7 +46,7 @@ export function popularSearchesPluginCreator({
           ...source.templates,
           header() {
             return (
-              <span className="aa-SourceHeaderTitle">Popular Searches</span>
+              <span className="aa-SourceHeaderTitle">Búsquedas Populares</span>
             )
           },
           item({ item, components }) {

@@ -47,7 +47,7 @@ function SortByComponent({
     <ExpandablePanel
       header={
         <div className="flex flex-col items-start">
-          <div>Sort</div>
+          <div>Ordenar Por:</div>
           {!isOpened && (
             <div className="body-regular font-normal">
               {refinedOption?.label}
@@ -82,7 +82,7 @@ function SortByComponent({
       prefix={
         <IconLabel
           icon={SortIcon}
-          label="Sort:"
+          label="Ordenar:"
           labelPosition="right"
           classNameLabel="label-regular"
           classNameIcon="w-4 h-4"
