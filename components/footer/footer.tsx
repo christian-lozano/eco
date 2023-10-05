@@ -6,7 +6,7 @@ import { Link } from '@ui/link/link'
 export type FooterProps = Record<string, unknown>
 
 export const Footer = memo(function Footer() {
-  // const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear()
 
   return (
     <footer className="mt-auto">
@@ -145,8 +145,8 @@ export const Footer = memo(function Footer() {
               </div>
             </div>
             <p className="font-sans p-8 text-start md:text-center md:text-lg md:p-4 text-white dark:text-[var(--dark-mode)]">
-              &copy; 2023 <a href="#">Fritz Sport</a>. Todos los Derechos
-              Reservados.
+              {currentYear} <Link href="#">Fritz Sport</Link>. Todos los
+              Derechos Reservados.
             </p>
           </div>
         </footer>
