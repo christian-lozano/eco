@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 
 export type ProductImageProps = {
-  src: string[]
+  src: string
   alt?: string
   className?: string
 }
