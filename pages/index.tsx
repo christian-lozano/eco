@@ -4,7 +4,6 @@ import { BannerPromociones } from '@/components/body-home/banner-promociones'
 import { CategoriasGenero } from '@/components/body-home/categorias-genero'
 import CarouselHome from '@/components/carousel/carousel-home'
 import { CarouselMarcasHome } from '@/components/carousel/carousel-marcas-home'
-import { TestMaterial } from '@/components/material-tailwind/test-material'
 import { ProductCardHitShowcase } from '@/components/product-card/product-card-hit'
 import { ProductsShowcase } from '@/components/products-showcase/products-showcase'
 import type { SearchPageLayoutProps } from '@/layouts/search-page-layout'
@@ -36,7 +35,6 @@ export default function Home(props: SearchPageLayoutProps) {
       /> */}
       <CarouselHome />
       <CategoriasGenero />
-      <TestMaterial />
 
       <ProductsShowcase
         title="Lo Nuevo en Zapatillas"
