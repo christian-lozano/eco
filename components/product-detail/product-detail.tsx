@@ -137,7 +137,7 @@ export function ProductDetail({
         >
           <IconLabel
             icon={ShoppingBagIcon}
-            label="Add to Cart"
+            label="Agregar al Carrito"
             labelPosition="right"
             className="gap-3"
             classNameLabel="btn-bold"

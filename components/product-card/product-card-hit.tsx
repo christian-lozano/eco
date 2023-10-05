@@ -46,7 +46,7 @@ export function ProductCardHitComponent({
     product.price = hit.price.discounted_value
 
     product.tags?.push({
-      label: `on sale ${hit.price.discount_level}%`,
+      label: `Descuento ${hit.price.discount_level}%`,
       theme: 'on-sale',
     } as ProductTagType)
   }
