@@ -165,7 +165,18 @@ const data = {
   // -------------------------------------
   dataPageNinos: {
     page: 'Niños',
-    nav: ['Calzado', 'Ropa', 'Accesorios', 'Descuento'],
+    nav: [
+      { title: 'Calzado', url: '/catalog?p=1' },
+      { title: 'Ropa', url: '/catalog?p=1' },
+      {
+        title: 'Accesorios',
+        url: '/catalog/Accessories?p=1',
+      },
+      {
+        title: 'Descuento',
+        url: '/catalog?p=1&sortBy=STAGING_pwa_ecom_ui_template_products_price_asc',
+      },
+    ],
     cardHeader: {
       imgDesktop:
         'https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1824,c_limit/3e88b7a0-cb45-4c8c-ac18-777e704e01cf/nike-kids-shoes-clothing-and-accessories-nike-com.jpg',
@@ -289,10 +300,10 @@ export default function Home(props: SearchPageLayoutProps) {
             {data.dataPageNinos.nav.map((el, i) => (
               <Link
                 key={i}
-                href="#"
-                className="text-black xl:text-white  font-sans text-lg font-semibold xl:text-lg"
+                href={el.url}
+                className="font-sans text-lg font-semibold xl:text-lg "
               >
-                {el}
+                <span className="text-white cursor-pointer">{el.title}</span>
               </Link>
             ))}
           </div>

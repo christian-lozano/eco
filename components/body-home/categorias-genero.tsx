@@ -4,21 +4,21 @@ import { Link } from '../@ui/link/link'
 
 const DataCardBg = [
   {
-    url: '#',
+    url: '/hombre',
     button: 'Mujer',
     imgCategory:
       'https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~EEA~others~KOPs~AW23~SEASONAL~CATEGORIES+SEPT~HOMEPAGE~EEA_AW23_TrendingInlineTile-homepage-woman_2000x2000.jpg/fmt/jpg/fmt/png',
   },
 
   {
-    url: '#',
+    url: '/mujer',
     button: 'Hombre',
     imgCategory:
       'https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~EEA~others~KOPs~AW23~SEASONAL~CATEGORIES+SEPT~HOMEPAGE~EEA_AW23_TrendingInlineTile-homepage_Man_2000x2000.jpg/fmt/jpg/fmt/png',
   },
 
   {
-    url: '#',
+    url: '/ninos',
     button: 'Niños',
     imgCategory:
       'https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~EEA~others~KOPs~AW23~SEASONAL~CATEGORIES+SEPT~HOMEPAGE~EEA_AW23_TrendingInlineTile-homepage-_kid_2000x2000.jpg/fmt/jpg/fmt/png',

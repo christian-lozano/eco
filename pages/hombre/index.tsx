@@ -14,7 +14,18 @@ import {
 const data = {
   dataPageHombre: {
     page: 'Hombre',
-    nav: ['Calzado', 'Ropa', 'Accesorios', 'Descuento'],
+    nav: [
+      { title: 'Calzado', url: '/catalog/Men/Shoes?p=1' },
+      { title: 'Ropa', url: '/catalog/Men/Clothing?p=1' },
+      {
+        title: 'Accesorios',
+        url: '/catalog/Accessories/Men?p=1',
+      },
+      {
+        title: 'Descuento',
+        url: '/catalog/Men?p=1&sortBy=STAGING_pwa_ecom_ui_template_products_price_asc',
+      },
+    ],
     cardHeader: {
       imgDesktop:
         'https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1824,c_limit/b759c6d4-9cea-4980-a66b-cb0763c67632/men-s-shoes-clothing-accessories.jpg',
@@ -289,10 +300,10 @@ export default function Home(props: SearchPageLayoutProps) {
             {data.dataPageHombre.nav.map((el, i) => (
               <Link
                 key={i}
-                href="#"
-                className="text-black xl:text-white  font-sans text-lg font-semibold xl:text-lg"
+                href={el.url}
+                className="font-sans text-lg font-semibold xl:text-lg "
               >
-                {el}
+                <span className="text-white cursor-pointer">{el.title}</span>
               </Link>
             ))}
           </div>
