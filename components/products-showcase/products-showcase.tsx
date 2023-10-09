@@ -13,7 +13,6 @@ export type ProductsShowcaseProps = {
   hitComponent: React.ComponentType<any>
   [index: string]: any
 }
-
 export function ProductsShowcase({
   indexName = defaultIndexName,
   indexId,
@@ -22,8 +21,6 @@ export function ProductsShowcase({
   hitComponent,
   ...searchParameters
 }: ProductsShowcaseProps) {
-
-
   return (
     <Index indexName={indexName} indexId={indexId}>
       <Configure {...searchParameters} />

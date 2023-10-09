@@ -30,8 +30,6 @@ const RefinementsPanel = dynamic<any>(() =>
 )
 
 export default function Catalog(props: SearchPageLayoutProps) {
-
-
   const { breadcrumbAttributes, refinementsLayoutAtom } =
     useAtomValue(configAtom)
   const refinementsLayout = useAtomValue(refinementsLayoutAtom)

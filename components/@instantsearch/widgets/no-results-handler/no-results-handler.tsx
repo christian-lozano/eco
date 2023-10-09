@@ -9,12 +9,10 @@ import { NoResultsQuerySuggestions } from './no-results-query-suggestions'
 export type NoResultsHandlerProps = StateResultsProvided & {
   children: React.ReactNode
 }
-
 export type NoResultsProps = {
   query: string
   isSearching: boolean
 }
-
 const NoResults = memo(
   function NoResults({ query }: NoResultsProps) {
     return (
@@ -45,7 +43,6 @@ const NoResults = memo(
   // loading waiting for new results.
   (_, nextProps) => nextProps.isSearching === true
 )
-
 function NoResultsHandlerComponent({
   children,
   searchState,
@@ -55,10 +52,8 @@ function NoResultsHandlerComponent({
   if (searchState?.query && searchResults?.nbHits === 0) {
     return <NoResults query={searchState.query} isSearching={searching} />
   }
-
   return <>{children}</>
 }
-
 export const NoResultsHandler = connectStateResults(
   memo(NoResultsHandlerComponent, isEqual)
 )
