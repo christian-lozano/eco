@@ -22,10 +22,11 @@ export function ProductsShowcase({
   hitComponent,
   ...searchParameters
 }: ProductsShowcaseProps) {
+
+
   return (
     <Index indexName={indexName} indexId={indexId}>
       <Configure {...searchParameters} />
-
       <section className={classNames('py-4 laptop:py-16', className)}>
         <Container>
           {title && (

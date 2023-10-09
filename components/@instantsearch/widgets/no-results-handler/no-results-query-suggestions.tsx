@@ -40,6 +40,8 @@ function NoResultsQuerySuggestionsHitButton({
 function NoResultsQuerySuggestionsHitsComponent({
   hits,
 }: NoResultsQuerySuggestionsHitsProps) {
+
+
   if (hits.length === 0) {
     return null
   }
