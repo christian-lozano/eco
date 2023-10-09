@@ -143,7 +143,7 @@ export const Footer = memo(function Footer() {
           </div>
         </div>
 
-        <p className="font-sans p-8 text-start md:text-center md:text-lg md:p-4 text-white dark:text-[var(--dark-mode)]">
+        <p className="font-sans p-8 text-start md:text-center md:text-lg md:p-4 text-black dark:text-[var(--dark-mode)]">
           {currentYear} <Link href="#">Fritz Sport</Link>. Todos los Derechos
           Reservados.
         </p>

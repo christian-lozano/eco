@@ -311,7 +311,7 @@ export default function Home(props: SearchPageLayoutProps) {
                 href={el.url}
                 className="font-sans text-lg font-semibold xl:text-lg "
               >
-                <span className="text-white cursor-pointer">{el.title}</span>
+                <span className="text-black cursor-pointer">{el.title}</span>
               </Link>
             ))}
           </div>
