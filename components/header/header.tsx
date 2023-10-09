@@ -1,5 +1,4 @@
 import classNames from 'classnames'
-import { useState } from 'react'
 
 import { Nav } from '@/components/nav/nav'
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
@@ -18,9 +17,9 @@ export function Header() {
     <header
       className={classNames(
         'z-header sticky -top-px pt-px transition-shadow bg-white shadow-md'
-        // {
-        //   'shadow-lg': isSticky,
-        // }
+        {
+          'shadowlg': isSticky,
+        }
       )}
       ref={setObservedNode}
     >
