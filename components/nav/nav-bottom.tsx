@@ -1,5 +1,6 @@
 import MenuIcon from '@material-design-icons/svg/outlined/menu.svg'
 import { Drawer } from '@material-tailwind/react'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useMemo, useState } from 'react'
 
@@ -53,15 +54,26 @@ export function NavBottom() {
         open={open}
         className="p-4"
         nonce={undefined}
+        onClick={() => setOpen(!open)}
         onClose={closeDrawer}
         onResize={undefined}
         onResizeCapture={undefined}
       >
-        <a href="/hombre" onClick={() => setOpen(!open)}>
-          <div className="w-full bg-red-200 h-5">
+        <Link href="/hombre">
+          <div className="w-full  h-5">
             <span> Hombre</span>
           </div>
-        </a>
+        </Link>
+        <Link href="/mujer" onClick={() => setOpen(!open)}>
+          <div className="w-full h-5 mt-2">
+            <span> Mujer</span>
+          </div>
+        </Link>
+        <Link href="/ninos" onClick={() => setOpen(!open)}>
+          <div className="w-full h-5 mt-2">
+            <span> Niños</span>
+          </div>
+        </Link>
       </Drawer>
 
       <Laptop>
