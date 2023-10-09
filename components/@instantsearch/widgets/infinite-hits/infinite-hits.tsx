@@ -19,12 +19,10 @@ export type InfiniteHitsProps = InfiniteHitsProvided & {
   gridClassName?: string
   listClassName?: string
 }
-
 const listItemTransition = {
   ease: [0.16, 1, 0.3, 1],
   duration: 0.6,
 }
-
 const listItemVariants = {
   hidden: { opacity: 0 },
   show: (i: number) => ({
@@ -36,7 +34,6 @@ const listItemVariants = {
     },
   }),
 }
-
 function InfiniteHitsComponent({
   hits,
   hasPrevious,
@@ -51,18 +48,14 @@ function InfiniteHitsComponent({
 }: InfiniteHitsProps) {
   const [hitsPerPage, setHitsPerPage] = useState(0)
   const shouldReduceMotion = useReducedMotion()
- 
-
   useEffect(() => {
     if (!hitsPerPage) setHitsPerPage(hits.length)
   }, [hitsPerPage, hits.length])
-
   return (
     <section className="w-full">
       {showLess && (
         <LoadLess hasPrevious={hasPrevious} refinePrevious={refinePrevious} />
       )}
-
       <m.ol
         className={classNames('overflow-hidden', {
           [classNames('grid grid-cols-2 gap-2', gridClassName)]:
@@ -90,12 +83,10 @@ function InfiniteHitsComponent({
           ))}
         </AnimatePresence>
       </m.ol>
-
       {showMore && <LoadMore />}
     </section>
   )
 }
-
 export const InfiniteHits = connectInfiniteHits<any, any>(
   memo(withDebugLayer(InfiniteHitsComponent, 'InfiniteHitsWidget'), isEqual)
 )
