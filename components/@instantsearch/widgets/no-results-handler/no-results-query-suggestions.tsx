@@ -14,13 +14,10 @@ import { searchStateAtom } from '@instantsearch/hooks/useUrlSync'
 export type NoResultsQuerySuggestionsProps = {
   query: string
 }
-
 export type NoResultsQuerySuggestionsHitsProps = HitsProvided<any>
-
 export type NoResultsQuerySuggestionsHitButtonProps = {
   query: string
 }
-
 function NoResultsQuerySuggestionsHitButton({
   query,
 }: NoResultsQuerySuggestionsHitButtonProps) {
@@ -36,16 +33,12 @@ function NoResultsQuerySuggestionsHitButton({
     </Button>
   )
 }
-
 function NoResultsQuerySuggestionsHitsComponent({
   hits,
 }: NoResultsQuerySuggestionsHitsProps) {
-
-
   if (hits.length === 0) {
     return null
   }
-
   return (
     <li>
       <span className="-ml-1.5">
@@ -62,20 +55,16 @@ function NoResultsQuerySuggestionsHitsComponent({
     </li>
   )
 }
-
 const NoResultsQuerySuggestionsHits = connectHits(
   memo(NoResultsQuerySuggestionsHitsComponent, isEqual)
 )
-
 export function NoResultsQuerySuggestions({
   query,
 }: NoResultsQuerySuggestionsProps) {
   const { searchParameters } = useAtomValue(configAtom)
-
   if (!querySuggestionsIndexName) {
     return null
   }
-
   return (
     <Index indexName={querySuggestionsIndexName}>
       <Configure
