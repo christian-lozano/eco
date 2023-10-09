@@ -69,19 +69,19 @@ export const Footer = memo(function Footer() {
 
             <div className="flex justify-around md:justify-between items-center mt-5 ">
               <Link
-                href="#"
+                href="/hombre"
                 className="uppercase text-xs md:ml-3 text-black transition-colors duration-300 dark:text-black dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
               >
                 Hombre
               </Link>
               <Link
-                href="#"
+                href="/mujer"
                 className="uppercase text-xs md:ml-3 text-black transition-colors duration-300 dark:text-black dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
               >
                 Mujer
               </Link>
               <Link
-                href="#"
+                href="/ninos"
                 className="uppercase text-xs md:ml-3 text-black transition-colors duration-300 dark:text-black dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
               >
                 Niños
