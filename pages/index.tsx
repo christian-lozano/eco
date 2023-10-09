@@ -38,8 +38,8 @@ export default function Home(props: SearchPageLayoutProps) {
 
       <ProductsShowcase
         title="Lo Nuevo en Zapatillas"
-        indexId="shoes"
-        query="shoes"
+        indexId="Men"
+        query="nike"
         hitComponent={ProductCardHitShowcase}
       />
       <BannerPromociones />
@@ -53,7 +53,7 @@ export default function Home(props: SearchPageLayoutProps) {
       <ProductsShowcase
         title="Recomendado Para ti"
         indexId="recommended"
-        query="jacket"
+        query="Clothing"
         hitComponent={ProductCardHitShowcase}
       />
       <CarouselMarcasHome />
