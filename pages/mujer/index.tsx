@@ -282,11 +282,11 @@ export default function Home(props: SearchPageLayoutProps) {
               altoScroll > 30 ? ' text-base xl:text-2xl' : 'text-lg xl:text-xl'
             }`}
           >
-            {data.dataPageHombre.page}
+            {data.dataPageMujer.page}
           </h2>
 
           <div className="xl:w-2/5    2xl:w-2/6 lg:w-2/5 md:w-3/5 sm:w-2/5 w-full flex justify-between items-end py-2  ">
-            {data.dataPageHombre.nav.map((el, i) => (
+            {data.dataPageMujer.nav.map((el, i) => (
               <Link
                 key={i}
                 href="#"
@@ -302,12 +302,12 @@ export default function Home(props: SearchPageLayoutProps) {
         {/* header */}
         <div className="p-0 ml-0 mr-0 pl-0 pr-0  flex flex-col justify-center w-full xl:mt-32 2xl:mt-16 mt-10 sm:mt-16 md:relative ">
           <img
-            src={data.dataPageHombre.cardHeader.imgDesktop}
+            src={data.dataPageMujer.cardHeader.imgDesktop}
             alt=""
             className="xl:block 2xl:block md:block hidden"
           />
           <img
-            src={data.dataPageHombre.cardHeader.imgMobil}
+            src={data.dataPageMujer.cardHeader.imgMobil}
             alt=""
             className="xl:hidden 2xl:hidden md:hidden block"
           />
@@ -316,17 +316,17 @@ export default function Home(props: SearchPageLayoutProps) {
             <div className="md:px-5">
               {' '}
               <h4 className="font-extrabold  text-4xl md:text-3xl text-black xl:text-4xl md:text-white uppercase">
-                {data.dataPageHombre.cardHeader.titulo}
+                {data.dataPageMujer.cardHeader.titulo}
               </h4>
             </div>
             <div className="md:p-5 py-5 w-2/3 md:w-full md:px-5 ">
               <p className="text-black md:text-white xl:text-lg">
-                {data.dataPageHombre.cardHeader.desc}
+                {data.dataPageMujer.cardHeader.desc}
               </p>
             </div>
             <div className=" md:px-5">
               <a
-                href={data.dataPageHombre.cardHeader.url}
+                href={data.dataPageMujer.cardHeader.url}
                 className="px-5 py-2 text-sm bg-black text-white  md:text-black md:bg-white font-semibold font-sans xl:text-lg"
               >
                 Tienda
@@ -338,12 +338,12 @@ export default function Home(props: SearchPageLayoutProps) {
         {/* recién Llegados */}
         <div className="mt-20 xl:flex xl:justify-center xl:w-full xl:flex-col xl:items-center">
           <h2 className="py-5 text-2xl 2xl:text-4xl font-bold">
-            {data.dataPageHombre.tituloRecienLlegados}
+            {data.dataPageMujer.tituloRecienLlegados}
           </h2>
           {/* ------------ */}
 
           <div className="grid gap-y-4 grid-cols-1 md:grid-cols-2 md:gap-x-5 2xl:container  ">
-            {data.dataPageHombre.cardRecienLLegados.map((el, i) => (
+            {data.dataPageMujer.cardRecienLLegados.map((el, i) => (
               <figure key={i}>
                 <div className="h-full w-full relative ">
                   <div>
@@ -370,10 +370,10 @@ export default function Home(props: SearchPageLayoutProps) {
         {/* popular */}
         <section className="w-full h-full  flex-col items-center  xl:flex justify-center mt-20">
           <h2 className="py-5 text-2xl 2xl:text-4xl font-bold">
-            {data.dataPageHombre.caracteristicasTitle}
+            {data.dataPageMujer.caracteristicasTitle}
           </h2>
           <div className="grid  grid-cols-1  gap-2 h-full  container">
-            {data.dataPageHombre.cartPopular.map((el, i) => (
+            {data.dataPageMujer.cartPopular.map((el, i) => (
               <figure key={i} className="cursor-pointer">
                 <div className="h-full w-full relative ">
                   <div>
