@@ -12,15 +12,15 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {/* Common meta */}
-          <meta name="description" content="Shop the latest fashion online" />
-          <meta name="application-name" content="Spencer and Williams" />
+          <meta name="description" content="Comercio electrónico E-commerce" />
+          <meta name="application-name" content="Fritz Sport E-commerce" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
             content="default"
           />
           <meta
             name="apple-mobile-web-app-title"
-            content="Spencer and Williams"
+            content="Fritz Sport E-commerce"
           />
           <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
@@ -28,9 +28,9 @@ export default class MyDocument extends Document {
             name="msapplication-config"
             content="/static/icons/browserconfig.xml"
           />
-          <meta name="msapplication-TileColor" content="#5468ff" />
+          <meta name="msapplication-TileColor" content="#000" />
           <meta name="msapplication-tap-highlight" content="no" />
-          <meta name="theme-color" content="#5468ff" />
+          <meta name="theme-color" content="#000" />
 
           {/* Icons */}
           <link
@@ -59,12 +59,12 @@ export default class MyDocument extends Document {
 
           {/* OG meta */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Spencer and Williams" />
+          <meta property="og:title" content="Fritz Sport E-commerce" />
           <meta
             property="og:description"
             content="Shop the latest fashion online"
           />
-          <meta property="og:site_name" content="Spencer and Williams" />
+          <meta property="og:site_name" content="Fritz Sport E-commerce" />
           <meta property="og:url" content="https://www.fritzsportsac.com/" />
           <meta
             property="og:image"
@@ -76,7 +76,7 @@ export default class MyDocument extends Document {
           {/* Twitter meta */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:url" content="https://www.fritzsportsac.com/" />
-          <meta name="twitter:title" content="Spencer and Williams" />
+          <meta name="twitter:title" content="Fritz Sport E-commerce" />
           <meta
             name="twitter:description"
             content="Shop the latest fashion online"
