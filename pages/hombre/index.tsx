@@ -365,7 +365,7 @@ export default function Home(props: SearchPageLayoutProps) {
                           {el.titulo}
                         </h3>
                       </div>
-                      <span bg="bg-white" text="bg-black" url={el.url} />
+                      <span className="bg-white text-black" />
                     </div>
                   </figcaption>
                 </div>
