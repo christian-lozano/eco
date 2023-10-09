@@ -63,7 +63,7 @@ export const Footer = memo(function Footer() {
           </div>
 
           <div>
-            <p className="font-bold  text-white dark:text-black uppercase text-center mt-10 xl:mt-0">
+            <p className="font-bold  text-white dark:text-black uppercase text-center mt-0">
               Categorias
             </p>
 

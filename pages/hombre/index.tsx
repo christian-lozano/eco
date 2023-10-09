@@ -303,7 +303,9 @@ export default function Home(props: SearchPageLayoutProps) {
                 href={el.url}
                 className="font-sans text-lg font-semibold xl:text-lg "
               >
-                <span className="text-white cursor-pointer">{el.title}</span>
+                <span className="md:text-white text-black cursor-pointer">
+                  {el.title}
+                </span>
               </Link>
             ))}
           </div>
@@ -383,7 +385,7 @@ export default function Home(props: SearchPageLayoutProps) {
           <h2 className="py-5 text-2xl 2xl:text-4xl font-bold">
             {data.dataPageHombre.caracteristicasTitle}
           </h2>
-          <div className="grid  grid-cols-1  gap-2 h-full  container">
+          <div className="grid  grid-cols-1 md:grid-cols-2   gap-2 h-full  container">
             {data.dataPageHombre.cartPopular.map((el, i) => (
               <figure key={i} className="cursor-pointer">
                 <div className="h-full w-full relative ">
