@@ -1,6 +1,7 @@
 import MenuIcon from '@material-design-icons/svg/outlined/menu.svg'
+import { Drawer } from '@material-tailwind/react'
 import { useRouter } from 'next/router'
-import { useMemo } from 'react'
+import React, { useMemo, useState } from 'react'
 
 import { Laptop, Tablet } from '@/lib/media'
 import { parseUrl } from '@/utils/parseUrl'
@@ -17,6 +18,11 @@ export function NavBottom() {
     return pathname.match(/\/catalog\/(.[^/]*)\/?/)?.[1]
   }, [router?.asPath])
 
+  // menu useState
+  const [open, setOpen] = useState(false)
+
+  const openDrawer = () => setOpen(true)
+  const closeDrawer = () => setOpen(false)
   const genderSubCategories = (
     <>
       {currentCategory === 'Women' && (
@@ -37,10 +43,26 @@ export function NavBottom() {
   return (
     <div className="flex items-center px-4 relative divide-x border-b border-neutral-light laptop:h-12 laptop:mx-20 laptop:mb-5 laptop:px-0 laptop:justify-between laptop:border-none laptop:divide-none">
       <Tablet>
-        <Button className="p-3 pl-0">
+        <Button className="p-3 pl-0" onClick={openDrawer}>
           <IconLabel icon={MenuIcon} label="Menu" labelPosition="right" />
         </Button>
       </Tablet>
+      {/* mobile   menu*/}
+
+      <Drawer
+        open={open}
+        className="p-4"
+        nonce={undefined}
+        onClose={closeDrawer}
+        onResize={undefined}
+        onResizeCapture={undefined}
+      >
+        <a href="/hombre" onClick={() => setOpen(!open)}>
+          <div className="w-full bg-red-200 h-5">
+            <span> Hombre</span>
+          </div>
+        </a>
+      </Drawer>
 
       <Laptop>
         {currentCategory && (
