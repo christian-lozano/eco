@@ -33,15 +33,15 @@ export type ProductDetailProps = {
   onCheckoutClick?: MouseEventHandler<HTMLButtonElement>
 }
 
-export type ProductDetailRatingProps = Pick<ProductDetailProps, 'reviews'>
+// export type ProductDetailRatingProps = Pick<ProductDetailProps, 'reviews'>
 
-function ProductDetailRating({ reviews }: ProductDetailRatingProps) {
-  return (
-    <a href="#reviews" className="body-bold underline">
-      ({reviews} reviews)
-    </a>
-  )
-}
+// function ProductDetailRating({ reviews }: ProductDetailRatingProps) {
+//   return (
+//     <a href="#reviews" className="body-bold underline">
+//       ({reviews} reviews)
+//     </a>
+//   )
+// }
 
 export function ProductDetail({
   image,
@@ -49,8 +49,8 @@ export function ProductDetail({
   title,
   description,
   tags,
-  rating,
-  reviews,
+  // rating,
+  // reviews,
   available,
   sizes,
   price,
