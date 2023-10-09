@@ -51,7 +51,10 @@ function LoadMoreButton({
       ref={setObservedNode}
       onClick={handleLoadMoreClick}
     >
-      {isSearchStalled ? translations.searchStalled : translations.loadMore}
+      {isSearchStalled
+        ? translations.searchStalled
+        : /* -------------translations.loadMore--------------------*/
+          'Leer Mas'}
     </Button>
   )
 }

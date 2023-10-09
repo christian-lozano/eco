@@ -60,10 +60,7 @@ export default class MyDocument extends Document {
           {/* OG meta */}
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Fritz Sport E-commerce" />
-          <meta
-            property="og:description"
-            content="Shop the latest fashion online"
-          />
+          <meta property="og:description" content="Fritz Sport E-commerce" />
           <meta property="og:site_name" content="Fritz Sport E-commerce" />
           <meta property="og:url" content="https://www.fritzsportsac.com/" />
           <meta
@@ -75,12 +72,12 @@ export default class MyDocument extends Document {
 
           {/* Twitter meta */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:url" content="https://www.fritzsportsac.com/" />
-          <meta name="twitter:title" content="Fritz Sport E-commerce" />
           <meta
-            name="twitter:description"
-            content="Shop the latest fashion online"
+            name="twitter:url"
+            content="https://e-commerce-renny.vercel.app"
           />
+          <meta name="twitter:title" content="Fritz Sport E-commerce" />
+          <meta name="twitter:description" content="Fritz Sport E-commerce" />
           <meta
             name="twitter:image"
             content="https://e-commerce-renny.vercel.app/static/images/socials/twitter.png"

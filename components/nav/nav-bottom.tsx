@@ -113,11 +113,11 @@ export function NavBottom() {
               {/* <!-- Sidebar links --> */}
               <nav className="flex-1 max-h-full mt-6 overflow-hidden">
                 <span onClick={() => setOpen(!open)}>
-                  <ul className="max-h-full p-2 space-y-1 overflow-y-auto overflow-x-hidden divide-y divide-blue-300 neumorphism-shadow">
+                  <ul className="max-h-full p-2 space-y-1 overflow-y-auto overflow-x-hidden divide-y neumorphism-shadow">
                     {/* <!-- Dashboard link --> */}
                     <li>
                       <span
-                        className="flex items-center w-full px-4 py-2 text-gray-600 transition-transform transform rounded-md hover:translate-x-1 focus:outline-none focus:ring"
+                        className="flex items-center w-full px-4 py-2 text-black transition-transform transform rounded-md hover:translate-x-1 focus:outline-none focus:ring"
                         data-bs-target="#dashboardCollapse"
                         data-bs-toggle="collapse"
                         aria-expanded="false"
@@ -130,7 +130,7 @@ export function NavBottom() {
                         </Link>
                       </span>
                       <ul className="collapse" id="dashboardCollapse">
-                        <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
+                        <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
                           <Link
                             href="/catalog/Men/Shoes?p=1"
                             onClick={() => setOpen(!open)}
@@ -138,7 +138,7 @@ export function NavBottom() {
                             Zapatillas
                           </Link>
                         </li>
-                        <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
+                        <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
                           <Link
                             href="/catalog/Men/Clothing?p=1"
                             onClick={() => setOpen(!open)}
@@ -146,7 +146,7 @@ export function NavBottom() {
                             Ropa
                           </Link>
                         </li>
-                        <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
+                        <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
                           <Link
                             href="/catalog/Accessories/Men?p=1"
                             onClick={() => setOpen(!open)}
@@ -158,7 +158,7 @@ export function NavBottom() {
                     </li>
                     <li>
                       <span
-                        className="flex items-center w-full px-4 py-2 text-gray-600 transition-transform transform rounded-md hover:translate-x-1 focus:outline-none focus:ring"
+                        className="flex items-center w-full px-4 py-2 text-black transition-transform transform rounded-md hover:translate-x-1 focus:outline-none focus:ring"
                         data-bs-target="#dashboardCollapse"
                         data-bs-toggle="collapse"
                         aria-expanded="false"
@@ -171,7 +171,7 @@ export function NavBottom() {
                         </Link>
                       </span>
                       <ul className="collapse" id="dashboardCollapse">
-                        <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
+                        <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
                           <Link
                             href="/catalog/Women/Shoes/Sneakers?q=sneakers&p=1&indices%5BSTAGING_pwa_ecom_ui_template_products_query_suggestions%5D%5Bpage%5D=1"
                             onClick={() => setOpen(!open)}
@@ -179,7 +179,7 @@ export function NavBottom() {
                             Zapatillas
                           </Link>
                         </li>
-                        <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
+                        <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
                           <Link
                             href="/catalog/Women/Clothing?p=1"
                             onClick={() => setOpen(!open)}
@@ -187,7 +187,7 @@ export function NavBottom() {
                             Ropa
                           </Link>
                         </li>
-                        <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
+                        <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
                           <Link
                             href="/catalog/Accessories/Women?p=1"
                             onClick={() => setOpen(!open)}
@@ -199,7 +199,7 @@ export function NavBottom() {
                     </li>
                     <li>
                       <span
-                        className="flex items-center w-full px-4 py-2 text-gray-600 transition-transform transform rounded-md hover:translate-x-1 focus:outline-none focus:ring"
+                        className="flex items-center w-full px-4 py-2 text-black transition-transform transform rounded-md hover:translate-x-1 focus:outline-none focus:ring"
                         data-bs-target="#dashboardCollapse"
                         data-bs-toggle="collapse"
                         aria-expanded="false"
@@ -212,13 +212,13 @@ export function NavBottom() {
                         </Link>
                       </span>
                       <ul className="collapse" id="dashboardCollapse">
-                        <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
+                        <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
                           <Link href="/catalog?p=1">Zapatillas</Link>
                         </li>
-                        <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
+                        <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
                           <Link href="/catalog?p=1">Ropa</Link>
                         </li>
-                        <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
+                        <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
                           <Link href="/catalog/Accessories?p=1">
                             Accesorios
                           </Link>

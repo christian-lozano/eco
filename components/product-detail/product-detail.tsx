@@ -1,14 +1,11 @@
 import ShoppingBagIcon from '@material-design-icons/svg/outlined/shopping_bag.svg'
-import SyncIcon from '@material-design-icons/svg/outlined/sync.svg'
 import type { MouseEvent, MouseEventHandler } from 'react'
-import { useCallback, useState } from 'react'
+import { useCallback } from 'react'
 
 import { ProductDescription } from '@/components/product/product-description'
-import { ProductFavorite } from '@/components/product/product-favorite'
 import { ProductLabel } from '@/components/product/product-label'
 import type { ProductPriceCurrency } from '@/components/product/product-price'
 import { ProductPrice } from '@/components/product/product-price'
-import { ProductRating } from '@/components/product/product-rating'
 import type { ProductSizeType } from '@/components/product/product-sizes'
 import { ProductSizes } from '@/components/product/product-sizes'
 import type { ProductTagType } from '@/components/product/product-tag'
@@ -62,11 +59,11 @@ export function ProductDetail({
   popular,
   onCheckoutClick,
 }: ProductDetailProps) {
-  const [isFavorite, setIsFavorite] = useState(false)
-  const handleFavoriteClick = useCallback(
-    () => setIsFavorite((favorite) => !favorite),
-    []
-  )
+  // const [isFavorite, setIsFavorite] = useState(false)
+  // const handleFavoriteClick = useCallback(
+  //   () => setIsFavorite((favorite) => !favorite),
+  //   []
+  // )
 
   const handleCheckoutClick = useCallback(
     (e: MouseEvent<HTMLButtonElement>) => {
@@ -78,7 +75,7 @@ export function ProductDetail({
   return (
     <div className="flex flex-col gap-6 mb-12 laptop:my-8 laptop:flex-row">
       <div className="laptop:w-8/12">
-        <div className="flex flex-col items-center bg-brand-black laptop:min-h-[500px]">
+        <div className="flex flex-col items-center laptop:min-h-[500px]">
           {image && (
             <ProductDetails
               src={image}
@@ -96,7 +93,7 @@ export function ProductDetail({
         {title && (
           <ProductTitle className="heading-4 mt-1">{title}</ProductTitle>
         )}
-        {typeof rating !== 'undefined' && (
+        {/* {typeof rating !== 'undefined' && (
           <ProductRating
             rating={rating}
             reviews={reviews}
@@ -104,7 +101,7 @@ export function ProductDetail({
             className="mt-4"
             classNameStar="w-5 h-5"
           />
-        )}
+        )} */}
         {description && (
           <ProductDescription className="body-regular mt-6">
             {description}
@@ -149,7 +146,7 @@ export function ProductDetail({
             <span className="text-brand-nebula font-bold">selling fast</span>
           </div>
         )}
-        <ul className="flex flex-col gap-3 mt-6">
+        {/* <ul className="flex flex-col gap-3 mt-6">
           <li>
             <ProductFavorite
               layout="icon-label"
@@ -177,7 +174,7 @@ export function ProductDetail({
               classNameIcon="w-4 h-4"
             />
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   )
