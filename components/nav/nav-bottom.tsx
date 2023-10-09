@@ -131,17 +131,26 @@ export function NavBottom() {
                       </span>
                       <ul className="collapse" id="dashboardCollapse">
                         <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
-                          <Link href="/ninos" onClick={() => setOpen(!open)}>
+                          <Link
+                            href="/catalog/Men/Shoes?p=1"
+                            onClick={() => setOpen(!open)}
+                          >
                             Zapatillas
                           </Link>
                         </li>
                         <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
-                          <Link href="/ninos" onClick={() => setOpen(!open)}>
+                          <Link
+                            href="/catalog/Men/Clothing?p=1"
+                            onClick={() => setOpen(!open)}
+                          >
                             Ropa
                           </Link>
                         </li>
                         <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
-                          <Link href="/ninos" onClick={() => setOpen(!open)}>
+                          <Link
+                            href="/catalog/Accessories/Men?p=1"
+                            onClick={() => setOpen(!open)}
+                          >
                             Accesorios
                           </Link>
                         </li>
@@ -163,17 +172,26 @@ export function NavBottom() {
                       </span>
                       <ul className="collapse" id="dashboardCollapse">
                         <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
-                          <Link href="/ninos" onClick={() => setOpen(!open)}>
+                          <Link
+                            href="/catalog/Women/Shoes/Sneakers?q=sneakers&p=1&indices%5BSTAGING_pwa_ecom_ui_template_products_query_suggestions%5D%5Bpage%5D=1"
+                            onClick={() => setOpen(!open)}
+                          >
                             Zapatillas
                           </Link>
                         </li>
                         <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
-                          <Link href="/ninos" onClick={() => setOpen(!open)}>
+                          <Link
+                            href="/catalog/Women/Clothing?p=1"
+                            onClick={() => setOpen(!open)}
+                          >
                             Ropa
                           </Link>
                         </li>
                         <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
-                          <Link href="/ninos" onClick={() => setOpen(!open)}>
+                          <Link
+                            href="/catalog/Accessories/Women?p=1"
+                            onClick={() => setOpen(!open)}
+                          >
                             Accesorios
                           </Link>
                         </li>
@@ -195,13 +213,15 @@ export function NavBottom() {
                       </span>
                       <ul className="collapse" id="dashboardCollapse">
                         <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
-                          <Link href="/ninos">Zapatillas</Link>
+                          <Link href="/catalog?p=1">Zapatillas</Link>
                         </li>
                         <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
-                          <Link href="/ninos">Ropa</Link>
+                          <Link href="/catalog?p=1">Ropa</Link>
                         </li>
                         <li className="flex px-6 py-2 font-medium text-gray-600 transition-transform transform hover:translate-x-5 translate-x-3">
-                          <Link href="/ninos">Accesorios</Link>
+                          <Link href="/catalog/Accessories?p=1">
+                            Accesorios
+                          </Link>
                         </li>
                       </ul>
                     </li>
