@@ -51,6 +51,7 @@ function InfiniteHitsComponent({
 }: InfiniteHitsProps) {
   const [hitsPerPage, setHitsPerPage] = useState(0)
   const shouldReduceMotion = useReducedMotion()
+ 
 
   useEffect(() => {
     if (!hitsPerPage) setHitsPerPage(hits.length)
