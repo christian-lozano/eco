@@ -1,9 +1,9 @@
 {
   "name": "Fritz Sport",
   "short_name": "FritzSport",
-  "description": "Shop the latest fashion online",
-  "theme_color": "#5468ff",
-  "background_color": "#ffffff",
+  "description": "Comercio Electrónico Fritz Sport",
+  "theme_color": "#000",
+  "background_color": "#fff",
   "display": "standalone",
   "orientation": "any",
   "scope": "/",

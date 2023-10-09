@@ -1,5 +1,6 @@
 import { AnimatePresence } from 'framer-motion'
 import type { AppProps } from 'next/app'
+import { NextScript } from 'next/document'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Script from 'next/script'
@@ -18,7 +19,6 @@ import { Overlay } from '@/components/overlay/overlay'
 import { AppLayout } from '@/layouts/app-layout'
 import { gaTrackingId, isDev, isProd } from '@/utils/env'
 import { scrollToTop } from '@/utils/scrollToTop'
-
 import '@/styles/_index.css'
 
 export const Header = dynamic<HeaderProps>(() =>
@@ -46,6 +46,11 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover"
+        />
+        <NextScript
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+          crossOrigin="anonymous"
         />
       </Head>
 
