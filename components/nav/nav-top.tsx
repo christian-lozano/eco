@@ -837,14 +837,12 @@ export const NavTop = memo(function NavTop() {
                       </Link>
                       <ul>
                         <li>
-                          {menulist.title && (
-                            <Link
-                              href="/mujer?grid=true"
-                              className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold uppercase text-sm"
-                            >
-                              {menulist.title}
-                            </Link>
-                          )}
+                          <Link
+                            href="/mujer?grid=true"
+                            className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold uppercase text-sm"
+                          >
+                            {menulist.title}
+                          </Link>
 
                           {menulist.img && (
                             <div className=" w-auto ">
