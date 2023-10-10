@@ -486,7 +486,7 @@ export const NavTop = memo(function NavTop() {
                               <div className="flex flex-col justify-between w-full pb-4">
                                 <div className="flex justify-between w-full pb-2 space-x-2">
                                   <div className="space-y-1">
-                                    <h3 className="text-lg font-semibold leadi sm:pr-8">
+                                    <h3 className="text-lg font-semibold  sm:pr-8">
                                       Polaroid camera
                                     </h3>
                                     <p className="text-sm dark:text-gray-400">
@@ -822,74 +822,50 @@ export const NavTop = memo(function NavTop() {
                 id="navMenuDesktop"
                 className={`absolute ${
                   andler ? 'flex' : 'hidden'
-                }  flex-col  w-[100vw]  border-t-2 dark:bg-[var(--dark-mode)] bg-white xl:top-[64px]  2xl:top-[80px] justify-center items-center  z-50 `}
+                }  flex-col  w-[100%]  border-t-2 dark:bg-[var(--dark-mode)] bg-white xl:top-[64px]  2xl:top-[80px] justify-center items-center  z-50 `}
                 onMouseEnter={() => setAndler(true)}
                 onMouseLeave={() => setAndler(false)}
               >
                 <div className="w-full grid grid-flow-col container justify-items-center ">
-                  {/* {hoverMenu.map((menulist, index) =>
-                    !menulist.categorias ? (
-                      <div className="p-5 min-h-[410px]">
-                        <Link
-                          href="/mujer?grid=true"
-                          className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold text-sm"
-                        >
-                          {menulist.titulo}
-                        </Link>
-                        <ul>
-                          {!menulist.categoria ? (
-                            <li>
+                  {hoverMenu.map((menulist, index) => (
+                    <div className="p-5 min-h-[410px]">
+                      <Link
+                        href="/mujer?grid=true"
+                        className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold text-sm"
+                      >
+                        {menulist.titulo}
+                      </Link>
+                      <ul>
+                        {!menulist.categoria ? (
+                          <li>
+                            <Link
+                              href="/mujer?grid=true"
+                              className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold uppercase text-sm"
+                            >
+                              {menulist.title}
+                            </Link>
+                            <div className=" w-auto ">
+                              <img
+                                src={menulist.img}
+                                alt=""
+                                className="max-h-[400px]"
+                              />
+                            </div>
+                          </li>
+                        ) : (
+                          menulist.categoria.map((element, i) => (
+                            <li key={i}>
                               <Link
-                                href="/mujer?grid=true"
-                                className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold uppercase text-sm"
+                                href="#"
+                                className="xl:text-xs border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
                               >
-                                {menulist.title}
+                                {element}
                               </Link>
-                              <div className=" w-auto ">
-                                <img
-                                  src={menulist.img}
-                                  alt=""
-                                  className="max-h-[400px]"
-                                />
-                              </div>
                             </li>
-                          ) : (
-                            menulist.categoria.map((element, i) => (
-                              <li key={i}>
-                                <Link
-                                  href="#"
-                                  className="xl:text-xs border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
-                                >
-                                  {element}
-                                </Link>
-                              </li>
-                            ))
-                          )}
-                        </ul>
-                      </div>
-                    ) : (
-                      <div className="p-5 min-h-[310px]">
-                        <Link
-                          href="/mujer?grid=true"
-                          className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-blacktransition ease-out font-semibold text-sm"
-                        >
-                          {menulist.titulo}
-                        </Link>
-
-                        <Link
-                          href="/mujer?grid=true"
-                          className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold uppercase text-sm"
-                        >
-                          {menulist.title}
-                        </Link>
-                        <div className=" w-auto ">
-                          <img
-                            src={menulist.img}
-                            alt=""
-                            className="max-h-[400px]"
-                          />
-                        </div>
-
+                          ))
+                        )}
+                      </ul>
+                      {menulist.categorias && (
                         <ul>
                           {menulist.categorias.map((el, i) => (
                             <li key={i}>
@@ -902,9 +878,9 @@ export const NavTop = memo(function NavTop() {
                             </li>
                           ))}
                         </ul>
-                      </div>
-                    )
-                  )} */}
+                      )}
+                    </div>
+                  ))}
                 </div>
                 {/* footer */}
                 <div className="w-full border-t-[2px]  flex justify-center">
