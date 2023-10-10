@@ -380,7 +380,7 @@ export const NavTop = memo(function NavTop() {
                           <Link
                             href={`/${el.url}`}
                             className="h-full flex justify-center items-center "
-                            key={index}
+                            key={el.titulo}
                             onClick={() => setAndler(false)}
                             onMouseEnter={() => handleHover(index)}
                             onMouseLeave={() => setAndler(false)}
