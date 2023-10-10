@@ -364,6 +364,7 @@ export const NavTop = memo(function NavTop() {
 
   const handleHover = (e: string[]) => {
     // setActiveHoverMenuNav(index)
+    // eslint-disable-next-line prettier/prettier
     document
       .getElementById('navMenuDesktop')
       .classList.replace('hidden', 'flex')
@@ -371,12 +372,14 @@ export const NavTop = memo(function NavTop() {
   }
 
   const handleRemoveHover = () => {
+    // eslint-disable-next-line prettier/prettier
     document
       .getElementById('navMenuDesktop')
       .classList.replace('flex', 'hidden')
   }
 
   const enterHoverNavDesktop = () => {
+    // eslint-disable-next-line prettier/prettier
     document
       .getElementById('navMenuDesktop')
       .classList.replace('hidden', 'flex')
