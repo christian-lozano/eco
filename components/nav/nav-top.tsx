@@ -13,14 +13,13 @@ import { Button } from '@ui/button/button'
 import { IconLabel } from '@ui/icon-label/icon-label'
 import { Link } from '@ui/link/link'
 
-import { NavAutocomplete } from './nav-autocomplete'
-
 const Logo = dynamic<LogoProps>(() =>
   import(/* webpackChunkName: 'common' */ '@/components/logo/logo').then(
     (mod) => mod.Logo
   )
 )
-const dataHeader = [
+
+const dataHeader: DataHeader = [
   {
     id: 'mujer',
     titulo: 'Mujer',
@@ -361,104 +360,15 @@ export const NavTop = memo(function NavTop() {
   const openDrawer = () => setOpen(true)
   // desktop nav
   const [hoverMenu, setHoverMenu] = useState(dataHeader[0].infoNav)
+  const [andler, setAndler] = useState(false)
 
-  const handleHover = (e: string[]) => {
+  const handleHover = (index: number) => {
     // setActiveHoverMenuNav(index)
     // eslint-disable-next-line prettier/prettier
-    document
-      .getElementById('navMenuDesktop')
-      .classList.replace('hidden', 'flex')
-    setHoverMenu(e)
-  }
+  
 
-  const handleRemoveHover = () => {
-    // eslint-disable-next-line prettier/prettier
-    document
-      .getElementById('navMenuDesktop')
-      .classList.replace('flex', 'hidden')
-  }
-
-  const enterHoverNavDesktop = () => {
-    // eslint-disable-next-line prettier/prettier
-    document
-      .getElementById('navMenuDesktop')
-      .classList.replace('hidden', 'flex')
-  }
-
-  function Menu({ menulist }) {
-    return (
-      <div className="p-5 min-h-[410px]">
-        <a
-          href="/mujer?grid=true"
-          className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold text-sm"
-        >
-          {menulist.titulo}
-        </a>
-        <ul>
-          {!menulist.categoria ? (
-            <li>
-              <a
-                href="/mujer?grid=true"
-                className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold uppercase text-sm"
-              >
-                {menulist.title}
-              </a>
-              <div className=" w-auto ">
-                <img src={menulist.img} alt="" className="max-h-[400px]" />
-              </div>
-            </li>
-          ) : (
-            menulist.categoria.map((element, i) => (
-              <li key={i}>
-                <Link
-                  href="#"
-                  className="xl:text-xs border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
-                >
-                  {element}
-                </Link>
-              </li>
-            ))
-          )}
-        </ul>
-      </div>
-    )
-  }
-  function SubMenu({ menuSubmenu }) {
-    // console.log(menuSubmenu.categorias);
-
-    return (
-      <div className="p-5 min-h-[310px]">
-        <a
-          href="/mujer?grid=true"
-          className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-blacktransition ease-out font-semibold text-sm"
-        >
-          {menuSubmenu.titulo}
-        </a>
-
-        <a
-          href="/mujer?grid=true"
-          className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold uppercase text-sm"
-        >
-          {menuSubmenu.title}
-        </a>
-        <div className=" w-auto ">
-          <img src={menuSubmenu.img} alt="" className="max-h-[400px]" />
-        </div>
-
-        <ul>
-          {menuSubmenu.categorias.map((el, i) => (
-            <li key={i}>
-              <Link
-                href="#"
-                className=" xl:text-xs border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
-              >
-                {el}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    )
+    setAndler(true)
+    setHoverMenu(dataHeader[index].infoNav)
   }
 
   return (
@@ -473,7 +383,7 @@ export const NavTop = memo(function NavTop() {
               <div
                 className={` w-[100%] relative bg-[var(--dark-mode)] px-10 z-50`}
               >
-                <div className="flex justify-around  items-center w-full">
+                <div className="flex justify-around   w-full">
                   {/* logo nav */}
                   <div className="flex  items-center xl:justify-around 2xl:justify-between text-blue-gray-900 ">
                     <Link href="/" className=" px-10 ">
@@ -511,20 +421,18 @@ export const NavTop = memo(function NavTop() {
                     </Link>
                     <div className=" lg:block h-full 2xl:ml-16">
                       <div className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:px-1 grid grid-flow-col gap-x-10 h-full ">
-                        {dataHeader.map((el, index) => (
+                        {dataHeader.map((el: string[], index: number) => (
                           <Link
                             href={`/${el.url}`}
-                            className="h-full flex justify-center items-center"
+                            className="h-full flex justify-center items-center "
                             key={index}
-                            onClick={() => handleRemoveHover()}
-                            onMouseEnter={() =>
-                              handleHover(dataHeader[index].infoNav, index)
-                            }
-                            onMouseLeave={() => handleRemoveHover()}
+                            onClick={() => setAndler(false)}
+                            onMouseEnter={() => handleHover(index)}
+                            onMouseLeave={() => setAndler(false)}
                           >
                             <button
                               type="button"
-                              className=" inline-flex items-center justify-between  px-2  font-medium transition-all duration-500 rounded-md focus:outline-none focus:text-brand-900 sm:focus:shadow-outline"
+                              className=" inline-flex items-center  justify-between  px-2  font-medium transition-all duration-500 rounded-md focus:outline-none focus:text-brand-900 sm:focus:shadow-outline"
                             >
                               <span
                                 className={`flex-shrink-0 font-normal text-black xl:text-sm  2xl:text-lg  border-transparent  `}
@@ -946,9 +854,7 @@ export const NavTop = memo(function NavTop() {
 
                   {/* Buscador  */}
 
-                  <div className="hidden md:flex items-center">
-                    <NavAutocomplete />
-                  </div>
+                  {/* <NavAutocomplete /> */}
                 </div>
               </div>
 
@@ -957,16 +863,89 @@ export const NavTop = memo(function NavTop() {
               /* ---------------------------------*/}
               <div
                 id="navMenuDesktop"
-                className={`absolute hidden  flex-col  w-[100vw]  border-t-2 dark:bg-[var(--dark-mode)] bg-white xl:top-[64px]  2xl:top-[80px] justify-center items-center  z-50 `}
-                onMouseEnter={() => enterHoverNavDesktop()}
-                onMouseLeave={() => handleRemoveHover()}
+                className={`absolute ${
+                  andler ? 'flex' : 'hidden'
+                }  flex-col  w-[100vw]  border-t-2 dark:bg-[var(--dark-mode)] bg-white xl:top-[64px]  2xl:top-[80px] justify-center items-center  z-50 `}
+                onMouseEnter={() => setAndler(true)}
+                onMouseLeave={() => setAndler(false)}
               >
                 <div className="w-full grid grid-flow-col container justify-items-center ">
                   {hoverMenu.map((menulist, index) =>
                     !menulist.submenu ? (
-                      <Menu menulist={menulist} key={index} />
+                      <div className="p-5 min-h-[410px]">
+                        <Link
+                          href="/mujer?grid=true"
+                          className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold text-sm"
+                        >
+                          {menulist.titulo}
+                        </Link>
+                        <ul>
+                          {!menulist.categoria ? (
+                            <li>
+                              <Link
+                                href="/mujer?grid=true"
+                                className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold uppercase text-sm"
+                              >
+                                {menulist.title}
+                              </Link>
+                              <div className=" w-auto ">
+                                <img
+                                  src={menulist.img}
+                                  alt=""
+                                  className="max-h-[400px]"
+                                />
+                              </div>
+                            </li>
+                          ) : (
+                            menulist.categoria.map((element, i) => (
+                              <li key={i}>
+                                <Link
+                                  href="#"
+                                  className="xl:text-xs border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
+                                >
+                                  {element}
+                                </Link>
+                              </li>
+                            ))
+                          )}
+                        </ul>
+                      </div>
                     ) : (
-                      <SubMenu key={index} menuSubmenu={menulist} />
+                      <div className="p-5 min-h-[310px]">
+                        <a
+                          href="/mujer?grid=true"
+                          className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-blacktransition ease-out font-semibold text-sm"
+                        >
+                          {menulist.titulo}
+                        </a>
+
+                        <a
+                          href="/mujer?grid=true"
+                          className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold uppercase text-sm"
+                        >
+                          {menulist.title}
+                        </a>
+                        <div className=" w-auto ">
+                          <img
+                            src={menulist.img}
+                            alt=""
+                            className="max-h-[400px]"
+                          />
+                        </div>
+
+                        <ul>
+                          {menulist.categorias.map((el, i) => (
+                            <li key={i}>
+                              <Link
+                                href="#"
+                                className=" xl:text-xs border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
+                              >
+                                {el}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     )
                   )}
                 </div>

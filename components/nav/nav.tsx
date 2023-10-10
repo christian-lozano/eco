@@ -10,7 +10,7 @@ export function Nav() {
     <nav>
       {/* <NavHome /> */}
       <NavTop />
-      <div className="md:hidden">
+      <div className="absolute justify-end w-full">
         <NavBottom />
       </div>
     </nav>
