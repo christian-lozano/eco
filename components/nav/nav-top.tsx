@@ -509,10 +509,7 @@ export const NavTop = memo(function NavTop() {
                                     <option>05</option>
                                     <option>06</option>
                                   </select>
-                                  <button
-                                    type="button"
-                                    className="flex items-center px-2 py-1 pl-0 space-x-1"
-                                  >
+                                  <span className="flex items-center px-2 py-1 pl-0 space-x-1">
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
                                       viewBox="0 0 512 512"
@@ -540,7 +537,7 @@ export const NavTop = memo(function NavTop() {
                                       <path d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z"></path>
                                     </svg>
                                     <span>Remover</span>
-                                  </button>
+                                  </span>
                                 </div>
                               </div>
                             </div>
@@ -583,10 +580,7 @@ export const NavTop = memo(function NavTop() {
                                     <option>05</option>
                                     <option>06</option>
                                   </select>
-                                  <button
-                                    type="button"
-                                    className="flex items-center px-2 py-1 pl-0 space-x-1"
-                                  >
+                                  <span className="flex items-center px-2 py-1 pl-0 space-x-1">
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
                                       viewBox="0 0 512 512"
@@ -614,7 +608,7 @@ export const NavTop = memo(function NavTop() {
                                       <path d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z"></path>
                                     </svg>
                                     <span>Remover</span>
-                                  </button>
+                                  </span>
                                 </div>
                               </div>
                             </div>
@@ -657,10 +651,7 @@ export const NavTop = memo(function NavTop() {
                                     <option>05</option>
                                     <option>06</option>
                                   </select>
-                                  <button
-                                    type="button"
-                                    className="flex items-center px-2 py-1 pl-0 space-x-1"
-                                  >
+                                  <span className="flex items-center px-2 py-1 pl-0 space-x-1">
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
                                       viewBox="0 0 512 512"
@@ -688,7 +679,7 @@ export const NavTop = memo(function NavTop() {
                                       <path d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z"></path>
                                     </svg>
                                     <span>Remover</span>
-                                  </button>
+                                  </span>
                                 </div>
                               </div>
                             </div>
@@ -731,10 +722,7 @@ export const NavTop = memo(function NavTop() {
                                     <option>05</option>
                                     <option>06</option>
                                   </select>
-                                  <button
-                                    type="button"
-                                    className="flex items-center px-2 py-1 pl-0 space-x-1"
-                                  >
+                                  <span className="flex items-center px-2 py-1 pl-0 space-x-1">
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
                                       viewBox="0 0 512 512"
@@ -762,7 +750,7 @@ export const NavTop = memo(function NavTop() {
                                       <path d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z"></path>
                                     </svg>
                                     <span>Remover</span>
-                                  </button>
+                                  </span>
                                 </div>
                               </div>
                             </div>
@@ -814,7 +802,6 @@ export const NavTop = memo(function NavTop() {
               /* Container Hover Desktop*/
               /* ---------------------------------*/}
               <div
-                role="button"
                 id="navMenuDesktop"
                 className={`absolute ${
                   andler ? 'flex' : 'hidden'
@@ -1078,10 +1065,7 @@ export const NavTop = memo(function NavTop() {
                               <option>05</option>
                               <option>06</option>
                             </select>
-                            <button
-                              type="button"
-                              className="flex items-center px-2 py-1 pl-0 space-x-1"
-                            >
+                            <span className="flex items-center px-2 py-1 pl-0 space-x-1">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"
@@ -1109,7 +1093,7 @@ export const NavTop = memo(function NavTop() {
                                 <path d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z"></path>
                               </svg>
                               <span>Remover</span>
-                            </button>
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -1150,10 +1134,7 @@ export const NavTop = memo(function NavTop() {
                               <option>05</option>
                               <option>06</option>
                             </select>
-                            <button
-                              type="button"
-                              className="flex items-center px-2 py-1 pl-0 space-x-1"
-                            >
+                            <span className="flex items-center px-2 py-1 pl-0 space-x-1">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"
@@ -1181,7 +1162,7 @@ export const NavTop = memo(function NavTop() {
                                 <path d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z"></path>
                               </svg>
                               <span>Remover</span>
-                            </button>
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -1222,10 +1203,7 @@ export const NavTop = memo(function NavTop() {
                               <option>05</option>
                               <option>06</option>
                             </select>
-                            <button
-                              type="button"
-                              className="flex items-center px-2 py-1 pl-0 space-x-1"
-                            >
+                            <span className="flex items-center px-2 py-1 pl-0 space-x-1">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"
@@ -1253,7 +1231,7 @@ export const NavTop = memo(function NavTop() {
                                 <path d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z"></path>
                               </svg>
                               <span>Remover</span>
-                            </button>
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -1294,10 +1272,7 @@ export const NavTop = memo(function NavTop() {
                               <option>05</option>
                               <option>06</option>
                             </select>
-                            <button
-                              type="button"
-                              className="flex items-center px-2 py-1 pl-0 space-x-1"
-                            >
+                            <span className="flex items-center px-2 py-1 pl-0 space-x-1">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 512 512"
@@ -1325,7 +1300,7 @@ export const NavTop = memo(function NavTop() {
                                 <path d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z"></path>
                               </svg>
                               <span>Remover</span>
-                            </button>
+                            </span>
                           </div>
                         </div>
                       </div>
