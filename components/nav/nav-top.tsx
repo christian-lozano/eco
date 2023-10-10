@@ -4,18 +4,20 @@
 import PinDropIcon from '@material-design-icons/svg/outlined/pin_drop.svg'
 import ShoppingBagIcon from '@material-design-icons/svg/outlined/shopping_bag.svg'
 import { Drawer, IconButton } from '@material-tailwind/react'
+import dynamic from 'next/dynamic'
 import { memo, useState } from 'react'
 
+import type { LogoProps } from '@/components/logo/logo'
 import { Tablet, Laptop } from '@/lib/media'
 import { Button } from '@ui/button/button'
 import { IconLabel } from '@ui/icon-label/icon-label'
 import { Link } from '@ui/link/link'
 
-// const Logo = dynamic<LogoProps>(() =>
-//   import(/* webpackChunkName: 'common' */ '@/components/logo/logo').then(
-//     (mod) => mod.Logo
-//   )
-// )
+const Logo = dynamic<LogoProps>(() =>
+  import(/* webpackChunkName: 'common' */ '@/components/logo/logo').then(
+    (mod) => mod.Logo
+  )
+)
 
 const dataHeader = [
   {
@@ -824,7 +826,7 @@ export const NavTop = memo(function NavTop() {
               >
                 <div className="w-full grid grid-flow-col container justify-items-center ">
                   {hoverMenu.map((menulist, index) => (
-                    <div className="p-5 min-h-[410px]">
+                    <div key={index} className="p-5 min-h-[410px]">
                       <Link
                         href="/mujer?grid=true"
                         className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold text-sm"
