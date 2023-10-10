@@ -421,7 +421,7 @@ export const NavTop = memo(function NavTop() {
                     </Link>
                     <div className=" lg:block h-full 2xl:ml-16">
                       <div className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:px-1 grid grid-flow-col gap-x-10 h-full ">
-                        {dataHeader.map((el: string[], index: number) => (
+                        {dataHeader.map((el, index: number) => (
                           <Link
                             href={`/${el.url}`}
                             className="h-full flex justify-center items-center "
