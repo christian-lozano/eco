@@ -19,7 +19,7 @@ const Logo = dynamic<LogoProps>(() =>
   )
 )
 
-const dataHeader: DataHeader = [
+const dataHeader = [
   {
     id: 'mujer',
     titulo: 'Mujer',
