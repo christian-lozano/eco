@@ -801,7 +801,7 @@ export const NavTop = memo(function NavTop() {
               {/* ---------------------------------*/
               /* Container Hover Desktop*/
               /* ---------------------------------*/}
-              <div
+              <span
                 id="navMenuDesktop"
                 className={`absolute ${
                   andler ? 'flex' : 'hidden'
@@ -811,7 +811,7 @@ export const NavTop = memo(function NavTop() {
               >
                 <div className="w-full grid grid-flow-col container justify-items-center ">
                   {hoverMenu.map((menulist) => (
-                    <div className="p-5 min-h-[410px]">
+                    <div key={menulist.id} className="p-5 min-h-[410px]">
                       <Link
                         href="/mujer?grid=true"
                         className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold text-sm"
@@ -908,7 +908,7 @@ export const NavTop = memo(function NavTop() {
                     </li>
                   </ul>
                 </div> */}
-              </div>
+              </span>
             </div>
           </div>
         </nav>
