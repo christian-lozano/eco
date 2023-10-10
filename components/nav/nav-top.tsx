@@ -836,14 +836,17 @@ export const NavTop = memo(function NavTop() {
                         {menulist.titulo}
                       </Link>
                       <ul>
-                        {!menulist.categoria ? (
-                          <li>
+                        <li>
+                          {menulist.title && (
                             <Link
                               href="/mujer?grid=true"
                               className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold uppercase text-sm"
                             >
                               {menulist.title}
                             </Link>
+                          )}
+
+                          {menulist.img && (
                             <div className=" w-auto ">
                               <img
                                 src={menulist.img}
@@ -851,19 +854,8 @@ export const NavTop = memo(function NavTop() {
                                 className="max-h-[400px]"
                               />
                             </div>
-                          </li>
-                        ) : (
-                          menulist.categoria.map((element, i) => (
-                            <li key={i}>
-                              <Link
-                                href="#"
-                                className="xl:text-xs border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
-                              >
-                                {element}
-                              </Link>
-                            </li>
-                          ))
-                        )}
+                          )}
+                        </li>
                       </ul>
                       {menulist.categorias && (
                         <ul>
