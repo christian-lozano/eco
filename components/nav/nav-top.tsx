@@ -826,7 +826,7 @@ export const NavTop = memo(function NavTop() {
               >
                 <div className="w-full grid grid-flow-col container justify-items-center ">
                   {hoverMenu.map((menulist, index) => (
-                    <div key={index} className="p-5 min-h-[410px]">
+                    <div className="p-5 min-h-[410px]">
                       <Link
                         href="/mujer?grid=true"
                         className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold text-sm"
