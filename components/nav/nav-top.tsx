@@ -203,7 +203,7 @@ const dataHeader = [
     infoNav: [
       {
         titulo: 'Producto destacado',
-        categorias: [
+        categoria: [
           'Novedades',
           'Los Más Vendidos',
           'Solo Fritz Sport',
@@ -213,7 +213,7 @@ const dataHeader = [
       },
       {
         titulo: 'Producto destacado',
-        categorias: [
+        categoria: [
           'Novedades',
           'Los Más Vendidos',
           'Solo Fritz Sport',
@@ -223,7 +223,7 @@ const dataHeader = [
       },
       {
         titulo: 'Producto destacado',
-        categorias: [
+        categoria: [
           'Novedades',
           'Los Más Vendidos',
           'Solo Fritz Sport',
@@ -233,7 +233,7 @@ const dataHeader = [
       },
       {
         titulo: 'Producto destacado',
-        categorias: [
+        categoria: [
           'Novedades',
           'Los Más Vendidos',
           'Solo Fritz Sport',
@@ -243,7 +243,7 @@ const dataHeader = [
       },
       {
         titulo: 'Producto destacado',
-        categorias: [
+        categoria: [
           'Novedades',
           'Los Más Vendidos',
           'Solo Fritz Sport',
@@ -260,7 +260,7 @@ const dataHeader = [
     infoNav: [
       {
         titulo: 'Producto destacado',
-        categorias: [
+        categoria: [
           'Novedades',
           'Los Más Vendidos',
           'Solo Fritz Sport',
@@ -270,7 +270,7 @@ const dataHeader = [
       },
       {
         titulo: 'Producto destacado',
-        categorias: [
+        categoria: [
           'Novedades',
           'Los Más Vendidos',
           'Solo Fritz Sport',
@@ -280,7 +280,7 @@ const dataHeader = [
       },
       {
         titulo: 'Producto destacado',
-        categorias: [
+        categoria: [
           'Novedades',
           'Los Más Vendidos',
           'Solo Fritz Sport',
@@ -290,7 +290,7 @@ const dataHeader = [
       },
       {
         titulo: 'Producto destacado',
-        categorias: [
+        categoria: [
           'Novedades',
           'Los Más Vendidos',
           'Solo Fritz Sport',
@@ -300,7 +300,7 @@ const dataHeader = [
       },
       {
         titulo: 'Producto destacado',
-        categorias: [
+        categoria: [
           'Novedades',
           'Los Más Vendidos',
           'Solo Fritz Sport',
@@ -836,7 +836,7 @@ export const NavTop = memo(function NavTop() {
                         {menulist.titulo}
                       </Link>
                       <ul>
-                        {!menulist.categoria ? (
+                        {menulist.img ? (
                           <li>
                             <Link
                               href="/mujer?grid=true"
@@ -865,9 +865,9 @@ export const NavTop = memo(function NavTop() {
                           ))
                         )}
                       </ul>
-                      {menulist.categorias && (
+                      {menulist.categoria && (
                         <ul>
-                          {menulist.categorias.map((el, i) => (
+                          {menulist.categoria.map((el, i) => (
                             <li key={i}>
                               <Link
                                 href="#"
