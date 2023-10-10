@@ -1,1 +1,4 @@
 @import "./themes/default/_globals.css";
+.aa-InputWrapperSuffix{
+    display: none;
+}

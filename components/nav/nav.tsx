@@ -10,7 +10,9 @@ export function Nav() {
     <nav>
       {/* <NavHome /> */}
       <NavTop />
-      <NavBottom />
+      <div className="md:hidden">
+        <NavBottom />
+      </div>
     </nav>
   )
 }

@@ -1,4 +1,3 @@
-import CloseIcon from '@material-design-icons/svg/outlined/close.svg'
 import ArrowIcon from '@material-design-icons/svg/outlined/keyboard_arrow_right.svg'
 import { useAtomValue, useUpdateAtom } from 'jotai/utils'
 import { memo, useCallback, useMemo } from 'react'
@@ -10,7 +9,6 @@ import {
   searchQueryAtom,
   searchStateAtom,
 } from '@/components/@instantsearch/hooks/useUrlSync'
-import { Button } from '@/components/@ui/button/button'
 import { Icon } from '@/components/@ui/icon/icon'
 import { ClientOnly } from '@/components/client-only/client-only'
 import { searchResultsAtom } from '@instantsearch/widgets/virtual-state-results/virtual-state-results'
@@ -76,11 +74,11 @@ function BreadcrumbComponent({ items, refine, createURL }: BreadcrumbProps) {
             {currentQuery ? `Buscar “${currentQuery}”` : currentItem?.label}
           </span>
           <span className="subhead text-neutral-dark"> ({nbHits})</span>
-          {Boolean(currentQuery) && (
+          {/* {Boolean(currentQuery) && (
             <Button onClick={handleCloseClick}>
               <Icon icon={CloseIcon} className="ml-1.5 w-5 h-5" />
             </Button>
-          )}
+          )} */}
         </div>
       </div>
     </ClientOnly>

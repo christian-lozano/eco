@@ -97,7 +97,7 @@ export function NavAutocomplete() {
   return (
     <m.div
       className={autocompleteCn}
-      animate={{ width: isLaptop ? width : '100%' }}
+      animate={{ width: isLaptop ? width : '110%' }}
       transition={transition}
     >
       <div className="hidden absolute w-24 h-full -translate-x-full bg-gradient-to-l from-white laptop:block" />

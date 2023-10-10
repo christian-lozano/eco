@@ -8,9 +8,9 @@ export const Footer = memo(function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-white font-sans dark:bg-white mt-10">
+    <footer className="bg-white xl:bg-black font-sans dark:bg-white mt-10">
       <div className="container px-6 mx-auto">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-1 sm:gap-y-10 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-1 sm:gap-y-10 lg:grid-cols-1">
           <div className="sm:col-span-2 flex flex-col justify-center items-center">
             <div>
               <svg
@@ -18,7 +18,7 @@ export const Footer = memo(function Footer() {
                 height="1273"
                 viewBox="0 0 1273 1273"
                 xmlns="http://www.w3.org/2000/svg"
-                className="dark:fill-black fill-black w-32 h-32"
+                className="xl:fill-white fill-black w-32 h-32"
               >
                 <path d="M579.51 792.57C576.8 792.82 574.86 793.16 572.91 793.17C551.26 793.21 529.62 793.15 507.97 793.22C502.85 793.24 498.91 791.38 495.76 787.31C476.92 762.93 457.86 738.72 439.23 714.19C434.77 708.31 429.91 705.85 422.51 706.23C410.95 706.82 399.34 706.39 387.28 706.39C387.28 735.21 387.28 763.66 387.28 792.44C365.25 792.44 343.69 792.44 322.03 792.44C322.03 704.16 322.03 616.06 322.03 527.72C323.47 527.58 324.73 527.34 325.98 527.35C371.14 527.38 416.3 527.04 461.45 527.63C485.78 527.95 508.76 533.99 528.84 548.72C549.71 564.03 559.99 584.83 561.02 610.41C561.73 628.2 558.98 645.26 549.24 660.64C540.09 675.08 526.86 684.55 511.56 691.47C509 692.63 506.42 693.76 503.4 695.1C528.86 727.69 553.94 759.82 579.51 792.57ZM387.58 650.11C411.99 649.53 436.03 649.39 460.02 648.1C467.02 647.72 474.47 645.16 480.61 641.66C492.91 634.66 496.13 622.95 493.92 609.46C491.95 597.43 484.05 591.25 472.91 588.38C470.01 587.63 467.04 586.85 464.07 586.71C448.06 585.97 432.05 585.3 416.03 584.86C406.63 584.6 397.21 584.81 387.58 584.81C387.58 606.58 387.58 627.72 387.58 650.11Z" />
                 <path d="M1033.68 735.79C1083.53 735.79 1132.26 735.79 1181.24 735.79C1181.24 754.93 1181.24 773.79 1181.24 792.92C1101.29 792.92 1021.37 792.92 940.97 792.92C940.97 785.23 940.94 777.66 940.98 770.08C941 764.63 941.3 759.18 941.12 753.75C940.97 749.36 942.89 746.1 945.67 743.03C974.18 711.61 1002.66 680.18 1031.14 648.74C1049.23 628.77 1067.3 608.79 1085.37 588.8C1086.39 587.68 1087.3 586.46 1089.23 584.11C1085.15 584.11 1082.35 584.11 1079.55 584.11C1037.53 584.11 995.51 584.11 953.49 584.11C946.17 584.11 945.6 583.61 945.58 576.39C945.54 561.91 945.55 547.42 945.58 532.94C945.59 527.53 946.68 526.46 952.19 526.46C1027.19 526.5 1102.2 526.57 1177.2 526.52C1181.01 526.52 1182.09 527.67 1182.03 531.43C1181.89 540.16 1182.1 548.9 1182.39 557.62C1182.71 566.87 1179.61 574.83 1173.5 581.57C1155.67 601.19 1137.67 620.66 1119.83 640.28C1092.25 670.6 1064.75 700.99 1037.23 731.36C1036.22 732.48 1035.33 733.72 1033.68 735.79Z" />
@@ -44,7 +44,7 @@ export const Footer = memo(function Footer() {
                 <path d="M154.17 933.41C154.17 926.95 154.17 920.98 154.17 914.76C201.27 914.76 248.19 914.76 295.29 914.76C295.29 921.05 295.29 927.14 295.29 933.41C248.19 933.41 201.36 933.41 154.17 933.41Z" />
               </svg>
             </div>
-            <h1 className="max-w-lg text-xl font-semibold tracking-tight  text-black xl:text-2xl dark:text-black">
+            <h1 className="max-w-lg xl:max-w-none text-xl font-semibold tracking-tight  text-black xl:text-white xl:text-2xl dark:text-black">
               Suscríbase para recibir nuestras promociones.
             </h1>
 
@@ -63,26 +63,26 @@ export const Footer = memo(function Footer() {
           </div>
 
           <div>
-            <p className="font-bold  text-white dark:text-black uppercase text-center mt-0">
+            <p className="font-bold  text-black xl:text-white  dark:text-black uppercase text-center mt-0">
               Categorias
             </p>
 
-            <div className="flex justify-around md:justify-between items-center mt-5 ">
+            <div className="flex justify-around xl:justify-evenly xl:mt-10 md:justify-between items-center mt-5 ">
               <Link
                 href="/hombre"
-                className="uppercase text-xs md:ml-3 text-black transition-colors duration-300 dark:text-black dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
+                className="uppercase text-xs md:ml-3 text-black xl:text-white transition-colors duration-300 dark:text-black dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
               >
                 Hombre
               </Link>
               <Link
                 href="/mujer"
-                className="uppercase text-xs md:ml-3 text-black transition-colors duration-300 dark:text-black dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
+                className="uppercase text-xs md:ml-3 text-black xl:text-white transition-colors duration-300 dark:text-black dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
               >
                 Mujer
               </Link>
               <Link
                 href="/ninos"
-                className="uppercase text-xs md:ml-3 text-black transition-colors duration-300 dark:text-black dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
+                className="uppercase text-xs md:ml-3 text-black  xl:text-white transition-colors duration-300 dark:text-black dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500"
               >
                 Niños
               </Link>
@@ -90,12 +90,12 @@ export const Footer = memo(function Footer() {
           </div>
         </div>
 
-        <hr className="mt-6 border-gray-200 md:my-8 dark:border-gray-700 h-2" />
+        <hr className="mt-6 border-gray-200  md:my-8 dark:border-gray-700 h-2" />
 
         <div className="sm:flex sm:items-center sm:justify-between   xl:flex xl:justify-around 2xl:flex 2xl:justify-around ">
           <div className=" flex justify-center mb-5"></div>
 
-          <div className="flex gap-4 hover:cursor-pointer justify-center">
+          <div className="flex gap-4 hover:cursor-pointer w-full justify-center">
             <img
               src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg"
               width="30"
@@ -143,7 +143,7 @@ export const Footer = memo(function Footer() {
           </div>
         </div>
 
-        <p className="font-sans p-8 text-start md:text-center md:text-lg md:p-4 text-black dark:text-[var(--dark-mode)]">
+        <p className=" p-8 font-sans xl:text-sm text-start md:text-center md:text-lg md:p-4 text-black xl:text-white dark:text-[var(--dark-mode)]">
           {currentYear} <Link href="#">Fritz Sport</Link>. Todos los Derechos
           Reservados.
         </p>
