@@ -810,7 +810,7 @@ export const NavTop = memo(function NavTop() {
                 onMouseLeave={() => setAndler(false)}
               >
                 <div className="w-full grid grid-flow-col container justify-items-center ">
-                  {/* {hoverMenu.map((menulist) => (
+                  {hoverMenu.map((menulist) => (
                     <div key={menulist.titulo} className="p-5 min-h-[410px]">
                       <Link
                         href="/mujer?grid=true"
@@ -861,7 +861,7 @@ export const NavTop = memo(function NavTop() {
                         <></>
                       )}
                     </div>
-                  ))} */}
+                  ))}
                 </div>
                 {/* footer */}
                 {/* <div className="w-full border-t-[2px]  flex justify-center">
