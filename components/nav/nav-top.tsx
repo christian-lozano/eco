@@ -26,8 +26,6 @@ const dataHeader = [
     url: 'mujer',
     infoNav: [
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -37,8 +35,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -48,8 +44,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -70,8 +64,6 @@ const dataHeader = [
     url: 'hombre',
     infoNav: [
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -81,8 +73,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -92,8 +82,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -103,8 +91,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -125,8 +111,6 @@ const dataHeader = [
     url: 'ninos',
     infoNav: [
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -136,8 +120,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -147,8 +129,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -158,8 +138,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -169,8 +147,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Ropa Comoda para ti',
         img: 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/esPE/Images/Sportswear_Big_Image_tcm202-1057247.jpg',
       },
@@ -182,8 +158,6 @@ const dataHeader = [
     url: 'productos/outlet',
     infoNav: [
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -193,8 +167,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -204,8 +176,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -215,8 +185,6 @@ const dataHeader = [
         ],
       },
       {
-        submenu: false,
-
         titulo: 'Producto destacado',
         categoria: [
           'Novedades',
@@ -234,7 +202,6 @@ const dataHeader = [
     url: 'emprende',
     infoNav: [
       {
-        submenu: true,
         titulo: 'Producto destacado',
         categorias: [
           'Novedades',
@@ -245,7 +212,6 @@ const dataHeader = [
         img: 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/esPE/Images/Hombre_tcm202-989926.jpg',
       },
       {
-        submenu: true,
         titulo: 'Producto destacado',
         categorias: [
           'Novedades',
@@ -256,7 +222,6 @@ const dataHeader = [
         img: 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/esPE/Images/Mujer_tcm202-989927.jpg',
       },
       {
-        submenu: true,
         titulo: 'Producto destacado',
         categorias: [
           'Novedades',
@@ -267,7 +232,6 @@ const dataHeader = [
         img: 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/esPE/Images/Ninos_tcm202-989928.jpg',
       },
       {
-        submenu: true,
         titulo: 'Producto destacado',
         categorias: [
           'Novedades',
@@ -278,7 +242,6 @@ const dataHeader = [
         img: 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/esPE/Images/Deportes_tcm202-989929.jpg  ',
       },
       {
-        submenu: true,
         titulo: 'Producto destacado',
         categorias: [
           'Novedades',
@@ -296,7 +259,6 @@ const dataHeader = [
     url: 'empresas',
     infoNav: [
       {
-        submenu: true,
         titulo: 'Producto destacado',
         categorias: [
           'Novedades',
@@ -307,7 +269,6 @@ const dataHeader = [
         img: 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/esPE/Images/Hombre_tcm202-989926.jpg',
       },
       {
-        submenu: true,
         titulo: 'Producto destacado',
         categorias: [
           'Novedades',
@@ -318,7 +279,6 @@ const dataHeader = [
         img: 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/esPE/Images/Mujer_tcm202-989927.jpg',
       },
       {
-        submenu: true,
         titulo: 'Producto destacado',
         categorias: [
           'Novedades',
@@ -329,7 +289,6 @@ const dataHeader = [
         img: 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/esPE/Images/Ninos_tcm202-989928.jpg',
       },
       {
-        submenu: true,
         titulo: 'Producto destacado',
         categorias: [
           'Novedades',
@@ -340,7 +299,6 @@ const dataHeader = [
         img: 'https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/esPE/Images/Deportes_tcm202-989929.jpg  ',
       },
       {
-        submenu: true,
         titulo: 'Producto destacado',
         categorias: [
           'Novedades',
@@ -417,7 +375,6 @@ export const NavTop = memo(function NavTop() {
                         <path d="M951.5 933.3C951.5 926.97 951.5 921 951.5 914.77C998.89 914.77 1046.08 914.77 1093.58 914.77C1093.58 920.87 1093.58 926.94 1093.58 933.3C1046.33 933.3 999.13 933.3 951.5 933.3Z" />
                         <path d="M154.17 933.41C154.17 926.95 154.17 920.98 154.17 914.76C201.27 914.76 248.19 914.76 295.29 914.76C295.29 921.05 295.29 927.14 295.29 933.41C248.19 933.41 201.36 933.41 154.17 933.41Z" />
                       </svg>
-                      {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> */}
                     </Link>
                     <div className=" lg:block h-full 2xl:ml-16">
                       <div className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:px-1 grid grid-flow-col gap-x-10 h-full ">
@@ -871,7 +828,7 @@ export const NavTop = memo(function NavTop() {
               >
                 <div className="w-full grid grid-flow-col container justify-items-center ">
                   {hoverMenu.map((menulist, index) =>
-                    !menulist.submenu ? (
+                    !menulist.categorias ? (
                       <div className="p-5 min-h-[410px]">
                         <Link
                           href="/mujer?grid=true"
@@ -912,19 +869,19 @@ export const NavTop = memo(function NavTop() {
                       </div>
                     ) : (
                       <div className="p-5 min-h-[310px]">
-                        <a
+                        <Link
                           href="/mujer?grid=true"
                           className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-blacktransition ease-out font-semibold text-sm"
                         >
                           {menulist.titulo}
-                        </a>
+                        </Link>
 
-                        <a
+                        <Link
                           href="/mujer?grid=true"
                           className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold uppercase text-sm"
                         >
                           {menulist.title}
-                        </a>
+                        </Link>
                         <div className=" w-auto ">
                           <img
                             src={menulist.img}

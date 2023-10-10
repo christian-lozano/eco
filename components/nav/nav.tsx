@@ -10,7 +10,7 @@ export function Nav() {
     <nav>
       {/* <NavHome /> */}
       <NavTop />
-      <div className="absolute justify-end w-full">
+      <div className="absolute right-0 w-2/5 mt-2 -z-dev">
         <NavBottom />
       </div>
     </nav>
