@@ -819,7 +819,7 @@ export const NavTop = memo(function NavTop() {
                         {menulist.titulo}
                       </Link>
                       <ul>
-                        {menulist.img ? (
+                        {/* {menulist.img ? (
                           <li>
                             <div className=" w-auto ">
                               <img
@@ -842,7 +842,7 @@ export const NavTop = memo(function NavTop() {
                           ))
                         ) : (
                           <></>
-                        )}
+                        )} */}
                       </ul>
                       {/* {menulist.categoria ? (
                         <ul>
