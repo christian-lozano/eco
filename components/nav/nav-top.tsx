@@ -879,7 +879,7 @@ export const NavTop = memo(function NavTop() {
                   ))}
                 </div>
                 {/* footer */}
-                <div className="w-full border-t-[2px]  flex justify-center">
+                {/* <div className="w-full border-t-[2px]  flex justify-center">
                   <ul className="grid grid-cols-5 w-5/6 justify-items-center container">
                     <li className="px-5 py-2 font-semibold text-xs  ">
                       <a
@@ -922,7 +922,7 @@ export const NavTop = memo(function NavTop() {
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
