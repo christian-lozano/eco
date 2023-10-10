@@ -381,20 +381,17 @@ export const NavTop = memo(function NavTop() {
                             href={`/${el.url}`}
                             className="h-full flex justify-center items-center "
                             key={el.titulo}
+                            onClick={() => setAndler(false)}
+                            onMouseEnter={() => handleHover(index)}
+                            onMouseLeave={() => setAndler(false)}
                           >
-                            <button
-                              type="button"
-                              className=" inline-flex items-center  justify-between  px-2  font-medium transition-all duration-500 rounded-md focus:outline-none focus:text-brand-900 sm:focus:shadow-outline"
-                              onClick={() => setAndler(false)}
-                              onMouseEnter={() => handleHover(index)}
-                              onMouseLeave={() => setAndler(false)}
-                            >
+                            <div className=" inline-flex items-center  justify-between  px-2  font-medium transition-all duration-500 rounded-md focus:outline-none focus:text-brand-900 sm:focus:shadow-outline">
                               <span
                                 className={`flex-shrink-0 font-normal text-black xl:text-sm  2xl:text-lg  border-transparent  `}
                               >
                                 {el.titulo}
                               </span>
-                            </button>
+                            </div>
                           </Link>
                         ))}
                       </div>
@@ -817,6 +814,7 @@ export const NavTop = memo(function NavTop() {
               /* Container Hover Desktop*/
               /* ---------------------------------*/}
               <div
+                role="button"
                 id="navMenuDesktop"
                 className={`absolute ${
                   andler ? 'flex' : 'hidden'
