@@ -36,13 +36,13 @@ export function BannerPromociones() {
                 </div>
                 <div className="w-full flex justify-start  ">
                   <div className="flex justify-around ">
-                    <Link href="#">
+                    <Link href="/mujer">
                       <span className="text-black bg-white p-3  md:p-2 font-bold mr-6  text-sm 2xl:text-base">
                         Tienda Hombre
                       </span>
                     </Link>
 
-                    <Link href="#">
+                    <Link href="/hombre">
                       <span className="text-black bg-white p-3  md:p-2 font-bold mr-6  text-sm 2xl:text-base">
                         Tienda Mujer
                       </span>

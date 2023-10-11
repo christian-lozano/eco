@@ -124,7 +124,7 @@ export function NavBottom() {
                         aria-controls="dashboardCollapse"
                       >
                         <Link href="/hombre" onClick={() => setOpen(!open)}>
-                          <span className="ml-2 font-bold text-base cursor-pointer">
+                          <span className="ml-2 font-bold text-base cursor-pointer w-full">
                             Hombre
                           </span>
                         </Link>
@@ -210,7 +210,7 @@ export function NavBottom() {
                         aria-controls="dashboardCollapse"
                       >
                         <Link href="/ninos">
-                          <span className="ml-2 font-bold w-full h-full text-base cursor-pointer">
+                          <span className="ml-2 font-bold w-full h-full text-base cursor-pointer w-full">
                             Niños
                           </span>
                         </Link>
