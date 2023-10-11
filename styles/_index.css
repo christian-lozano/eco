@@ -2,3 +2,8 @@
 .aa-InputWrapperSuffix{
     display: none;
 }
+
+
+.absolute.inset-0.w-full.h-full.pointer-events-auto.z-\[9995\].bg-black.bg-opacity-60.backdrop-blur-sm {
+    height: 100vh;
+}
