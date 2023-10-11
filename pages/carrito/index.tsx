@@ -1,10 +1,9 @@
 import Link from 'next/link'
 // import { Configure } from 'react-instantsearch-core'
-
 // import type { SearchPageLayoutProps } from '@/layouts/search-page-layout'
 // import { SearchPageLayout } from '@/layouts/search-page-layout'
 
-export default function Home() {
+export default function index() {
   return (
     // <SearchPageLayout {...props}>
     // <Configure
@@ -14,7 +13,6 @@ export default function Home() {
     //   enablePersonalization={false}
     //   userToken={undefined}
     // </SearchPageLayout>
-
     <div className="py-16">
       <h1 className="mb-10 text-center text-2xl font-bold">CARRITO</h1>
       <div className="mx-auto max-w-5xl 2xl:max-w-7xl justify-center px-1 md:flex md:space-x-6 xl:px-0">
