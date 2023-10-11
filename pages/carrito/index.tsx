@@ -1,24 +1,19 @@
 import Link from 'next/link'
-import { Configure } from 'react-instantsearch-core'
+// import { Configure } from 'react-instantsearch-core'
 
-import { ProductCardHitShowcase } from '@/components/product-card/product-card-hit'
-import { ProductsShowcase } from '@/components/products-showcase/products-showcase'
-import type { SearchPageLayoutProps } from '@/layouts/search-page-layout'
-import {
-  getStaticPropsPage,
-  SearchPageLayout,
-} from '@/layouts/search-page-layout'
+// import type { SearchPageLayoutProps } from '@/layouts/search-page-layout'
+// import { SearchPageLayout } from '@/layouts/search-page-layout'
 
-export default function Home(props: SearchPageLayoutProps) {
+export default function Home() {
   return (
-    <SearchPageLayout {...props}>
-      <Configure
-        hitsPerPage={6}
+    // <SearchPageLayout {...props}>
+      // <Configure
+      //   hitsPerPage={6}
         // We cannot retrieve the user token at build time, so we disable perso
         // feature to avoid an additional call to retrieve Algolia results at load time
-        enablePersonalization={false}
-        userToken={undefined}
-      />
+      //   enablePersonalization={false}
+      //   userToken={undefined}
+      // />
       <div className="  py-16">
         <h1 className="mb-10 text-center text-2xl font-bold">CARRITO</h1>
         <div className="mx-auto max-w-5xl 2xl:max-w-7xl justify-center px-1 md:flex md:space-x-6 xl:px-0">
@@ -243,14 +238,14 @@ export default function Home(props: SearchPageLayoutProps) {
             </div>
           </div>
         </div>
-        <ProductsShowcase
+        {/* <ProductsShowcase
           title="Lo Nuevo en Zapatillas"
           indexId="Sneakers"
           query="Sneakers"
           hitComponent={ProductCardHitShowcase}
-        />
+        /> */}
       </div>
-    </SearchPageLayout>
+    {/* </SearchPageLayout> */}
   )
 }
-export const getStaticProps = () => getStaticPropsPage(Home)
+// export const getStaticProps = () => getStaticPropsPage(Home)
