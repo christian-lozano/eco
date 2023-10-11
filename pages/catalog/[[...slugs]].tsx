@@ -46,7 +46,7 @@ export default function Catalog(props: SearchPageLayoutProps) {
         <div className="flex flex-col laptop:flex-row">
           {(refinementsLayout === 'panel' || !isLaptop) && <RefinementsPanel />}
 
-          <div className="flex-grow flex flex-col gap-2 laptop:gap-5">
+          <div className="flex-grow flex flex-col gap-2 laptop:gap-5  pt-11">
             <RefinementsBar
               showRefinements={refinementsLayout === 'bar' && isLaptop}
             />

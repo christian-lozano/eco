@@ -698,7 +698,7 @@ export const NavTop = memo(function NavTop() {
                                       Set of travel chargers
                                     </h3>
                                     <p className="text-sm dark:text-gray-400">
-                                      Black
+                                      Blackñ
                                     </p>
                                   </div>
                                   <div className="text-right">
