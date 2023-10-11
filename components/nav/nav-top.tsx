@@ -484,8 +484,8 @@ export const NavTop = memo(function NavTop() {
                       <div className="flex flex-col max-w-3xl p-6 space-y-4 sm:p-10 xl:p-10 2xl:p-8  dark:bg-gray-900 dark:text-gray-100">
                         <h2 className="text-2xl font-semibold ">Carrito</h2>
                         <ul className="flex flex-col divide-y divide-gray-700   overflow-y-auto h-[calc(100vh-345px)]">
-                          <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                            <div className="flex w-full space-x-2 sm:space-x-4">
+                          <li className="flex flex-col py-6 sm:flex-row sm:justify-between items-center">
+                            <div className="flex w-full space-x-2 sm:space-x-4 items-center">
                               <img
                                 className="flex-shrink-0 object-cover w-20 h-20 dark:border-transparent rounded outline-none sm:w-32 sm:h-32 dark:bg-gray-500"
                                 src="https://assets.adidas.com/images/w_600,f_auto,q_auto/00ab66c9177a43cba35aaeaa0001c726_9366/Zapatillas_Forum_Bonega_Blanco_GX4414_01_standard.jpg"
@@ -555,8 +555,8 @@ export const NavTop = memo(function NavTop() {
                               </div>
                             </div>
                           </li>
-                          <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                            <div className="flex w-full space-x-2 sm:space-x-4">
+                          <li className="flex flex-col py-6 sm:flex-row sm:justify-between items-center">
+                            <div className="flex w-full space-x-2 sm:space-x-4 items-center">
                               <img
                                 className="flex-shrink-0 object-cover w-20 h-20 dark:border-transparent rounded outline-none sm:w-32 sm:h-32 dark:bg-gray-500"
                                 src="https://assets.adidas.com/images/w_600,f_auto,q_auto/feb250ed4cf9485fa566af4800b50bb6_9366/Zapatillas_Forum_Bonega_Blanco_IG9678_01_standard.jpg"
@@ -626,8 +626,8 @@ export const NavTop = memo(function NavTop() {
                               </div>
                             </div>
                           </li>
-                          <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                            <div className="flex w-full space-x-2 sm:space-x-4">
+                          <li className="flex flex-col py-6 sm:flex-row sm:justify-between items-center">
+                            <div className="flex w-full space-x-2 sm:space-x-4 items-center">
                               <img
                                 className="flex-shrink-0 object-cover w-20 h-20 dark:border-transparent rounded outline-none sm:w-32 sm:h-32 dark:bg-gray-500"
                                 src="https://assets.adidas.com/images/w_600,f_auto,q_auto/1c014421514741d08c2b5cf6bbfb4780_9366/Zapatillas_Forum_Bonega_Blanco_IG0280_01_standard.jpg "
@@ -697,8 +697,8 @@ export const NavTop = memo(function NavTop() {
                               </div>
                             </div>
                           </li>
-                          <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                            <div className="flex w-full space-x-2 sm:space-x-4">
+                          <li className="flex flex-col py-6 sm:flex-row sm:justify-between items-center">
+                            <div className="flex w-full space-x-2 sm:space-x-4 items-center">
                               <img
                                 className="flex-shrink-0 object-cover w-20 h-20 dark:border-transparent rounded outline-none sm:w-32 sm:h-32 dark:bg-gray-500"
                                 src="https://assets.adidas.com/images/w_600,f_auto,q_auto/1c014421514741d08c2b5cf6bbfb4780_9366/Zapatillas_Forum_Bonega_Blanco_IG0280_01_standard.jpg "
@@ -1020,8 +1020,8 @@ export const NavTop = memo(function NavTop() {
                 <div className="flex flex-col max-w-3xl p-6 space-y-4 sm:p-10 xl:p-10 2xl:p-8  dark:bg-gray-900 dark:text-gray-100">
                   <h2 className="text-2xl font-semibold ">Carrito</h2>
                   <ul className="flex flex-col divide-y divide-gray-700   overflow-y-auto h-[calc(100vh-345px)]">
-                    <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                      <div className="flex w-full space-x-2 sm:space-x-4">
+                    <li className="flex flex-col py-6 sm:flex-row sm:justify-between items-center">
+                      <div className="flex w-full space-x-2 sm:space-x-4 items-center">
                         <img
                           className="flex-shrink-0 object-cover w-20 h-20 dark:border-transparent rounded outline-none sm:w-32 sm:h-32 dark:bg-gray-500"
                           src="https://assets.adidas.com/images/w_600,f_auto,q_auto/00ab66c9177a43cba35aaeaa0001c726_9366/Zapatillas_Forum_Bonega_Blanco_GX4414_01_standard.jpg"
@@ -1089,8 +1089,8 @@ export const NavTop = memo(function NavTop() {
                         </div>
                       </div>
                     </li>
-                    <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                      <div className="flex w-full space-x-2 sm:space-x-4">
+                    <li className="flex flex-col py-6 sm:flex-row sm:justify-between items-center">
+                      <div className="flex w-full space-x-2 sm:space-x-4 items-center">
                         <img
                           className="flex-shrink-0 object-cover w-20 h-20 dark:border-transparent rounded outline-none sm:w-32 sm:h-32 dark:bg-gray-500"
                           src="https://assets.adidas.com/images/w_600,f_auto,q_auto/feb250ed4cf9485fa566af4800b50bb6_9366/Zapatillas_Forum_Bonega_Blanco_IG9678_01_standard.jpg"
@@ -1158,8 +1158,8 @@ export const NavTop = memo(function NavTop() {
                         </div>
                       </div>
                     </li>
-                    <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                      <div className="flex w-full space-x-2 sm:space-x-4">
+                    <li className="flex flex-col py-6 sm:flex-row sm:justify-between items-center">
+                      <div className="flex w-full space-x-2 sm:space-x-4 items-center">
                         <img
                           className="flex-shrink-0 object-cover w-20 h-20 dark:border-transparent rounded outline-none sm:w-32 sm:h-32 dark:bg-gray-500"
                           src="https://assets.adidas.com/images/w_600,f_auto,q_auto/1c014421514741d08c2b5cf6bbfb4780_9366/Zapatillas_Forum_Bonega_Blanco_IG0280_01_standard.jpg "
@@ -1227,8 +1227,8 @@ export const NavTop = memo(function NavTop() {
                         </div>
                       </div>
                     </li>
-                    <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
-                      <div className="flex w-full space-x-2 sm:space-x-4">
+                    <li className="flex flex-col py-6 sm:flex-row sm:justify-between items-center">
+                      <div className="flex w-full space-x-2 sm:space-x-4 items-center">
                         <img
                           className="flex-shrink-0 object-cover w-20 h-20 dark:border-transparent rounded outline-none sm:w-32 sm:h-32 dark:bg-gray-500"
                           src="https://assets.adidas.com/images/w_600,f_auto,q_auto/1c014421514741d08c2b5cf6bbfb4780_9366/Zapatillas_Forum_Bonega_Blanco_IG0280_01_standard.jpg "
