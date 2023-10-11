@@ -219,7 +219,7 @@ export default function index() {
             </div>
           </div>
           <div className="fixed md:relative bottom-0 w-full flex justify-center left-0">
-            <Link href={'/checkout'} className="w-full">
+            <Link href={'/pagar'} className="w-full">
               <span className="mt-6 w-full text-center  bg-[#ae946d] py-1.5  font-bold text-white hover:bg-[#b99d73]">
                 PAGAR
               </span>

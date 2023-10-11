@@ -127,7 +127,7 @@
         ],
         "consequence": {
           "userData": {
-            "title": "Accessories",
+            "title": "Accesorios",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iste eveniet harum officia blanditiis corporis enim pariatur autem quidem ipsam illum distinctio ipsum, nobis et consequatur minima dolore adipisci ad.",
             "image": {
               "mobile": "/static/images/banners/accessories-men-mobile.jpg",
@@ -150,7 +150,7 @@
         ],
         "consequence": {
           "userData": {
-            "title": "Accessories",
+            "title": "Accessorios",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iste eveniet harum officia blanditiis corporis enim pariatur autem quidem ipsam illum distinctio ipsum, nobis et consequatur minima dolore adipisci ad.",
             "image": {
               "mobile": "/static/images/banners/accessories-women-mobile.jpg",
@@ -173,7 +173,7 @@
         ],
         "consequence": {
           "userData": {
-            "title": "Accessories",
+            "title": "Accessorios",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iste eveniet harum officia blanditiis corporis enim pariatur autem quidem ipsam illum distinctio ipsum, nobis et consequatur minima dolore adipisci ad.",
             "image": {
               "mobile": "/static/images/banners/accessories-mobile.jpg",

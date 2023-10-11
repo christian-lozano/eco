@@ -68,7 +68,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
       )}
 
       <Banner size="xs-large" className="z-header" fullWidth={true}>
-        20% Off! Code: SPRING21 - Terms apply*
+        20% de Descuento! Solo por este mes*
       </Banner>
       <Header />
 

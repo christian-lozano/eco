@@ -155,7 +155,7 @@ const dataHeader = [
   {
     id: 'outlet',
     titulo: 'OUTLET',
-    url: 'productos/outlet',
+    url: '/catalog?sortBy=STAGING_pwa_ecom_ui_template_products_price_asc&p=1',
     infoNav: [
       {
         titulo: 'Producto destacado',
@@ -828,7 +828,7 @@ export const NavTop = memo(function NavTop() {
                     <div key={menulist.titulo} className="p-5 min-h-[410px]">
                       <Link
                         href="/mujer?grid=true"
-                        className="border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out font-semibold text-sm"
+                        className="border-b-[1px] text-black border-transparent hover:border-b-[1px]  hover:border-black transition ease-out font-semibold text-sm"
                       >
                         {menulist.titulo}
                       </Link>
@@ -850,10 +850,10 @@ export const NavTop = memo(function NavTop() {
                           {menulist.categoria.map((el, i) => (
                             <li key={i}>
                               <Link
-                                href="#"
-                                className=" xl:text-[0.90rem] border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
+                                href="/test"
+                                className=" xl:text-[0.90rem] border-b-[1px] border-transparent hover:border-b-[1px]  hover:border-black transition ease-out "
                               >
-                                {el}
+                                <span className="text-black"> {el}</span>
                               </Link>
                             </li>
                           ))}
