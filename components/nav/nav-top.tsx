@@ -342,7 +342,7 @@ export const NavTop = memo(function NavTop() {
       {/* /*---------------------------------*/
       /* Desktop menu*/
       /* ---------------------------------*/}
-      <div className="hidden md:block">
+      <div className="hidden xl:block">
         <nav>
           <div>
             <div>
@@ -915,9 +915,9 @@ export const NavTop = memo(function NavTop() {
       {/* /*---------------------------------*/
       /* mobile menu*/
       /* ---------------------------------*/}
-      <div className="md:hidden flex flex-col px-4 py-2 border-b border-neutral-light laptop:mx-20 laptop:px-0 laptop:pt-8 laptop:pb-0 laptop:mb-5">
+      <div className="xl:hidden flex flex-col px-4 py-2 border-b border-neutral-light laptop:mx-20 laptop:px-0 laptop:pt-8 laptop:pb-0 laptop:mb-5">
         <div className="flex justify-between w-full gap-3 laptop:mb-8">
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center xl:hidden">
             <Logo />
           </div>
           {/* <nav className="hidden laptop:block">
@@ -928,8 +928,8 @@ export const NavTop = memo(function NavTop() {
           </ul>
         </nav> */}
 
-          <div className="flex gap-48 md:hidden">
-            <div className="hidden items-center gap-8 laptop:flex">
+          <div className="flex gap-48 xl:hidden">
+            <div className="hidden items-center gap-8 xl:flex">
               {/* <Link
               href="/support"
               title="Support"
