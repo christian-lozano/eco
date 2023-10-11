@@ -322,7 +322,7 @@ export const NavTop = memo(function NavTop() {
 
   const handleHover = (index: number) => {
     // setActiveHoverMenuNav(index)
-    // eslint-disable-next-line prettier/prettier
+
     setAndler(true)
     setHoverMenu(dataHeader[index].infoNav)
   }
