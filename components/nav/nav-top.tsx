@@ -982,7 +982,7 @@ export const NavTop = memo(function NavTop() {
               </Button>
               {/* /*---------------------------------*/
               /* CARRITO Nav*/
-              /* ---------------------------------*/}
+              /* --------------------------------*/}
               <Drawer
                 open={openCart}
                 placement="right"
