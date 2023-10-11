@@ -303,7 +303,4 @@ export default function Home(props: SearchPageLayoutProps) {
     </SearchPageLayout>
   )
 }
-
 export const getStaticProps = () => getStaticPropsPage(Home)
-
-
