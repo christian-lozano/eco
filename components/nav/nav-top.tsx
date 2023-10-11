@@ -315,7 +315,9 @@ const dataHeader = [
 export const NavTop = memo(function NavTop() {
   const [openCart, setOpen] = useState(false)
 
-  const [activeHoverNavDesktop, setActiveHoverNavDesktop] = useState()
+  const [activeHoverNavDesktop, setActiveHoverNavDesktop] = useState<
+    any | null
+  >(null)
 
   const openDrawer = () => setOpen(true)
   // desktop nav
