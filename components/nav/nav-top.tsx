@@ -819,7 +819,7 @@ export const NavTop = memo(function NavTop() {
                         {menulist.titulo}
                       </Link>
                       <ul>
-                        {/* {menulist.img ? (
+                        {menulist.img ? (
                           <li>
                             <div className=" w-auto ">
                               <img
@@ -830,7 +830,6 @@ export const NavTop = memo(function NavTop() {
                             </div>
                           </li>
                         ) : (
-                          menulist.categoria &&
                           menulist.categoria.map((element, i) => (
                             <li key={i}>
                               <Link
@@ -841,7 +840,7 @@ export const NavTop = memo(function NavTop() {
                               </Link>
                             </li>
                           ))
-                        )} */}
+                        )}
                       </ul>
                       {/* {menulist.categoria && (
                         <ul>
