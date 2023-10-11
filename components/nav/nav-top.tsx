@@ -327,12 +327,6 @@ export const NavTop = memo(function NavTop() {
     }
   }, [andler])
 
-  const removeHover = () => {
-    // setActiveHoverMenuNav(index)
-    // setActiveHoverNavDesktop(undefined)
-
-    setAndler(false)
-  }
   const handleHover = (index: number) => {
     // setActiveHoverMenuNav(index)
     setActiveHoverNavDesktop(index)
@@ -397,7 +391,7 @@ export const NavTop = memo(function NavTop() {
                             key={el.titulo}
                             onClick={() => setAndler(false)}
                             onMouseEnter={() => handleHover(index)}
-                            onMouseLeave={() => removeHover()}
+                            onMouseLeave={() => setAndler(false)}
                           >
                             <div className=" inline-flex items-center  justify-between  px-2  font-medium transition-all duration-500 rounded-md focus:outline-none focus:text-brand-900 sm:focus:shadow-outline">
                               <span
