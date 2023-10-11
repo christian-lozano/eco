@@ -5,7 +5,7 @@ export default function index() {
   return (
     <div className="  py-10">
       <h1 className="mb-10 text-center text-2xl font-bold">CARRITO</h1>
-      <div className="mx-auto max-w-5xl 2xl:max-w-7xl justify-center px-6 md:flex md:space-x-6 xl:px-0">
+      <div className="mx-auto max-w-5xl 2xl:max-w-7xl justify-center px-1 md:flex md:space-x-6 xl:px-0">
         <div className="rounded-lg md:w-2/3">
           {/* pruductos */}
           <div className="justify-between mb-6 rounded-lg bg-white  shadow-md flex sm:justify-start">
@@ -59,7 +59,7 @@ export default function index() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500"
+                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500 pr-1"
                   >
                     <path
                       strokeLinecap="round"
@@ -123,7 +123,7 @@ export default function index() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500"
+                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500 pr-1"
                   >
                     <path
                       strokeLinecap="round"
@@ -187,7 +187,7 @@ export default function index() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500"
+                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500 pr-1"
                   >
                     <path
                       strokeLinecap="round"
@@ -219,7 +219,7 @@ export default function index() {
             </div>
           </div>
           <div className="fixed md:relative bottom-0 w-full flex justify-center left-0">
-            <Link href={'/checkout'} className="w-full ">
+            <Link href={'/checkout'} className="w-full">
               <span className="mt-6 w-full text-center  bg-[#ae946d] py-1.5  font-bold text-white hover:bg-[#b99d73]">
                 PAGAR
               </span>
