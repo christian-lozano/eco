@@ -819,7 +819,7 @@ export const NavTop = memo(function NavTop() {
                         {menulist.titulo}
                       </Link>
                       <ul>
-                        {/* {menulist.img ? (
+                        {menulist.img && (
                           <li>
                             <div className=" w-auto ">
                               <img
@@ -829,19 +829,7 @@ export const NavTop = memo(function NavTop() {
                               />
                             </div>
                           </li>
-                        ) : (
-                          menulist.categoria &&
-                          menulist.categoria.map((element, i) => (
-                            <li key={i}>
-                              <Link
-                                href="#"
-                                className="xl:text-xs border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
-                              >
-                                {element}
-                              </Link>
-                            </li>
-                          ))
-                        )} */}
+                        )}
                       </ul>
                       {menulist.categoria && (
                         <ul>
