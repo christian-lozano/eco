@@ -452,7 +452,7 @@ export const NavTop = memo(function NavTop() {
                       placement="right"
                       size={500}
                       nonce={undefined}
-                      onClose={() => setOpen(false)}
+                      // onClose={() => setOpen(false)}
                       onResize={undefined}
                       onResizeCapture={undefined}
                     >
