@@ -829,7 +829,7 @@ export const NavTop = memo(function NavTop() {
                               />
                             </div>
                           </li>
-                        ) : menulist.categoria ? (
+                        ) : menulist.categoria && (
                           menulist.categoria.map((element, i) => (
                             <li key={i}>
                               <Link
@@ -840,11 +840,9 @@ export const NavTop = memo(function NavTop() {
                               </Link>
                             </li>
                           ))
-                        ) : (
-                          <></>
-                        )}
+                        ) }
                       </ul>
-                      {menulist.categoria ? (
+                      {menulist.categoria && (
                         <ul>
                           {menulist.categoria.map((el, i) => (
                             <li key={i}>
@@ -857,8 +855,6 @@ export const NavTop = memo(function NavTop() {
                             </li>
                           ))}
                         </ul>
-                      ) : (
-                        <></>
                       )}
                     </div>
                   ))}
