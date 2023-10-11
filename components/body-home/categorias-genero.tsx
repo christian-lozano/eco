@@ -4,14 +4,14 @@ import { Link } from '../@ui/link/link'
 
 const DataCardBg = [
   {
-    url: '/hombre',
+    url: '/mujer',
     button: 'Mujer',
     imgCategory:
       'https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~EEA~others~KOPs~AW23~SEASONAL~CATEGORIES+SEPT~HOMEPAGE~EEA_AW23_TrendingInlineTile-homepage-woman_2000x2000.jpg/fmt/jpg/fmt/png',
   },
 
   {
-    url: '/mujer',
+    url: '/hombre',
     button: 'Hombre',
     imgCategory:
       'https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~EEA~others~KOPs~AW23~SEASONAL~CATEGORIES+SEPT~HOMEPAGE~EEA_AW23_TrendingInlineTile-homepage_Man_2000x2000.jpg/fmt/jpg/fmt/png',

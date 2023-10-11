@@ -222,7 +222,7 @@ export default function Home(props: SearchPageLayoutProps) {
 
           <div className="grid gap-y-4 grid-cols-1 md:grid-cols-2 md:gap-x-5 2xl:container  ">
             {data.dataPageMujer.cardRecienLLegados.map((el, i) => (
-              <Link key={i} href={el.url}>
+              <a key={i} href={el.url}>
                 <figure className="cursor-pointer">
                   <div className="h-full w-full relative ">
                     <div>
@@ -241,7 +241,7 @@ export default function Home(props: SearchPageLayoutProps) {
                     </figcaption>
                   </div>
                 </figure>
-              </Link>
+              </a>
             ))}
           </div>
 
@@ -254,7 +254,7 @@ export default function Home(props: SearchPageLayoutProps) {
           </h2>
           <div className="grid  grid-cols-1 md:grid-cols-2 gap-2 h-full  container">
             {data.dataPageMujer.cartPopular.map((el, i) => (
-              <Link key={i} href={el.url}>
+              <a key={i} href={el.url}>
                 <figure className="cursor-pointer">
                   <div className="h-full w-full relative ">
                     <div>
@@ -273,7 +273,7 @@ export default function Home(props: SearchPageLayoutProps) {
                     </figcaption>
                   </div>
                 </figure>
-              </Link>
+              </a>
             ))}
           </div>
         </section>
