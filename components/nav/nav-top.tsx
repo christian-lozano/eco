@@ -988,9 +988,8 @@ export const NavTop = memo(function NavTop() {
                 </Laptop>
               </Button>
               {/* /*---------------------------------*/
-              /* CARRITO*/
+              /* CARRITO Nav*/
               /* ---------------------------------*/}
-
               <Drawer
                 transition={'0'}
                 open={openCart}
