@@ -30,15 +30,15 @@ export function NavBottom() {
       {currentCategory === 'Women' && (
         <NavItem label="Bags" href={`/catalog/${currentCategory}/Bags`} />
       )}
-      <NavItem label="Clothing" href={`/catalog/${currentCategory}/Clothing`} />
-      <NavItem label="Shoes" href={`/catalog/${currentCategory}/Shoes`} />
+      <NavItem label="Ropa" href={`/catalog/${currentCategory}/Clothing`} />
+      <NavItem label="Zapatos" href={`/catalog/${currentCategory}/Shoes`} />
     </>
   )
 
   const accessoriesSubCategories = (
     <>
-      <NavItem label="Men" href={`/catalog/${currentCategory}/Men`} />
-      <NavItem label="Women" href={`/catalog/${currentCategory}/Women`} />
+      <NavItem label="Hombre" href={`/catalog/${currentCategory}/Men`} />
+      <NavItem label="Mujer" href={`/catalog/${currentCategory}/Women`} />
     </>
   )
 
