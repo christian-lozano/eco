@@ -991,7 +991,6 @@ export const NavTop = memo(function NavTop() {
               /* CARRITO Nav*/
               /* ---------------------------------*/}
               <Drawer
-                transition={'0'}
                 open={openCart}
                 placement="right"
                 size={500}
