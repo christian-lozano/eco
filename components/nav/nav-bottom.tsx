@@ -50,7 +50,6 @@ export function NavBottom() {
         </Button>
       </Tablet>
       {/* mobile   menu*/}
-
       <Drawer
         open={open}
         // className="p-4"
@@ -210,7 +209,7 @@ export function NavBottom() {
                         aria-controls="dashboardCollapse"
                       >
                         <Link href="/ninos">
-                          <span className="ml-2 font-bold w-full h-full text-base cursor-pointer w-full">
+                          <span className="ml-2 font-bold w-full h-full text-base cursor-pointer">
                             Niños
                           </span>
                         </Link>
