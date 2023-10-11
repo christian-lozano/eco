@@ -59,7 +59,7 @@ export default function index() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500 pr-1"
+                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500"
                   >
                     <path
                       strokeLinecap="round"
@@ -123,7 +123,7 @@ export default function index() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500 pr-1"
+                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500"
                   >
                     <path
                       strokeLinecap="round"
@@ -187,7 +187,7 @@ export default function index() {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500 pr-1"
+                    className="h-5 w-5 cursor-pointer duration-150 hover:text-red-500"
                   >
                     <path
                       strokeLinecap="round"
