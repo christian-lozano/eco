@@ -992,11 +992,12 @@ export const NavTop = memo(function NavTop() {
               /* ---------------------------------*/}
 
               <Drawer
+                transition={'0'}
                 open={openCart}
                 placement="right"
                 size={500}
                 nonce={undefined}
-                onClose={() => setOpen(false)}
+                // onClose={() => setOpen(false)}
                 onResize={undefined}
                 onResizeCapture={undefined}
               >
