@@ -281,7 +281,7 @@ export default function Home(props: SearchPageLayoutProps) {
         classNameTitle="text-3xl font-normal tracking-wider leading-tight laptop:text-7xl"
       /> */}
       <nav
-        className={`w-full  bg-white xl:bg-black flex justify-center   ${
+        className={`w-full  bg-white xl:bg-black flex justify-center  mt-14 xl:mt-0  ${
           altoScroll > 10
             ? `translate-y-3 top-0 transition ease-in-out  `
             : 'translate-y-0  top-0 transition ease-in-out shadow-sm '
