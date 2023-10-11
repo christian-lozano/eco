@@ -155,7 +155,7 @@ const dataHeader = [
   {
     id: 'outlet',
     titulo: 'OUTLET',
-    url: '/catalog?sortBy=STAGING_pwa_ecom_ui_template_products_price_asc&p=1',
+    url: '#',
     infoNav: [
       {
         titulo: 'Producto destacado',
