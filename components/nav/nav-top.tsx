@@ -793,9 +793,10 @@ export const NavTop = memo(function NavTop() {
                           </div>
                           <Link
                             href={'/carrito'}
+                            className="flex w-full justify-center"
                             onClick={() => setOpen(!openCart)}
                           >
-                            <span className="mt-6 w-full rounded-md bg-black py-1.5  text-blue-50 hover:bg-blue-gray-900 font-semibold">
+                            <span className="mt-6 w-full p-5 text-center rounded-md bg-black py-1.5  text-blue-50 hover:bg-blue-gray-900 font-semibold">
                               COMPRAR AHORA
                             </span>
                           </Link>
@@ -1326,8 +1327,13 @@ export const NavTop = memo(function NavTop() {
                         {/* <p className="text-sm text-gray-700 uppercase">Incluye igv</p> */}
                       </div>
                     </div>
-                    <Link href={'/carrito'} onClick={() => setOpen(!openCart)}>
-                      <span className="mt-6 w-full rounded-md bg-black py-1.5  text-blue-50 hover:bg-blue-gray-900 font-semibold">
+
+                    <Link
+                      href={'/carrito'}
+                      className="flex w-full justify-center"
+                      onClick={() => setOpen(!openCart)}
+                    >
+                      <span className="mt-6 w-full rounded-md text-center bg-black py-1.5  text-blue-50 hover:bg-blue-gray-900 font-semibold">
                         COMPRAR AHORA
                       </span>
                     </Link>
