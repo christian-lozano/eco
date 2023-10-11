@@ -5,7 +5,7 @@ import PinDropIcon from '@material-design-icons/svg/outlined/pin_drop.svg'
 import ShoppingBagIcon from '@material-design-icons/svg/outlined/shopping_bag.svg'
 import { Drawer, IconButton } from '@material-tailwind/react'
 import dynamic from 'next/dynamic'
-import { memo, useState } from 'react'
+import { memo, useEffect, useState } from 'react'
 
 import type { LogoProps } from '@/components/logo/logo'
 import { Tablet, Laptop } from '@/lib/media'
@@ -315,13 +315,27 @@ const dataHeader = [
 export const NavTop = memo(function NavTop() {
   const [openCart, setOpen] = useState(false)
 
+  const [activeHoverNavDesktop, setActiveHoverNavDesktop] = useState()
+
   const openDrawer = () => setOpen(true)
   // desktop nav
   const [hoverMenu, setHoverMenu] = useState(dataHeader[0].infoNav)
   const [andler, setAndler] = useState(false)
+  useEffect(() => {
+    if (!andler) {
+      setActiveHoverNavDesktop(undefined)
+    }
+  }, [andler])
 
+  const removeHover = () => {
+    // setActiveHoverMenuNav(index)
+    // setActiveHoverNavDesktop(undefined)
+
+    setAndler(false)
+  }
   const handleHover = (index: number) => {
     // setActiveHoverMenuNav(index)
+    setActiveHoverNavDesktop(index)
 
     setAndler(true)
     setHoverMenu(dataHeader[index].infoNav)
@@ -383,11 +397,14 @@ export const NavTop = memo(function NavTop() {
                             key={el.titulo}
                             onClick={() => setAndler(false)}
                             onMouseEnter={() => handleHover(index)}
-                            onMouseLeave={() => setAndler(false)}
+                            onMouseLeave={() => removeHover()}
                           >
                             <div className=" inline-flex items-center  justify-between  px-2  font-medium transition-all duration-500 rounded-md focus:outline-none focus:text-brand-900 sm:focus:shadow-outline">
                               <span
-                                className={`flex-shrink-0 font-normal text-black xl:text-sm  2xl:text-lg  border-transparent  `}
+                                className={`flex-shrink-0 font-normal text-black xl:text-sm   ${
+                                  activeHoverNavDesktop === index &&
+                                  'border-b-2 border-black '
+                                }  2xl:text-lg `}
                               >
                                 {el.titulo}
                               </span>
@@ -832,12 +849,12 @@ export const NavTop = memo(function NavTop() {
                         )}
                       </ul>
                       {menulist.categoria && (
-                        <ul>
+                        <ul className="grid grid-cols-1 gap-y-3 mt-2">
                           {menulist.categoria.map((el, i) => (
                             <li key={i}>
                               <Link
                                 href="#"
-                                className=" xl:text-xs border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
+                                className=" xl:text-[0.90rem] border-b-[1px] border-transparent hover:border-b-[1px] hover:dark:border-white hover:border-black transition ease-out "
                               >
                                 {el}
                               </Link>
