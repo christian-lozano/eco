@@ -11,7 +11,7 @@
     }
 
     &.chip-selected {
-      @apply text-white bg-brand-black;
+      @apply text-white bg-black;
     }
   }
 }

@@ -17,7 +17,7 @@
   }
 
   .btn--selected {
-    @apply bg-brand-black text-white;
+    @apply bg-black text-white;
   }
 
   /* ---------- Types */
@@ -25,14 +25,14 @@
   /* Primary */
   .btn-primary,
   .btn-item {
-    @apply bg-brand-black text-white;
+    @apply bg-black text-white;
 
     &:hover {
       @apply can-hover:bg-neutral-darkest;
     }
 
     &:active {
-      @apply bg-brand-black;
+      @apply bg-black;
     }
 
     &:disabled {

@@ -60,7 +60,7 @@ export function Banner({
         className={classNames(
           'relative text-white',
           {
-            'bg-brand-black text-center py-1 px-4': size?.startsWith('xs'),
+            'bg-black text-center py-1 px-4': size?.startsWith('xs'),
             'text-sm': size === 'xs-large',
             'text-xs font-bold uppercase': size === 'xs-small',
 

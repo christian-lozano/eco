@@ -135,7 +135,7 @@ export function NavBottom() {
                             href="/catalog/Men/Shoes?p=1"
                             onClick={() => setOpen(!open)}
                           >
-                            Zapatillas
+                            <span className="w-full">Zapatillas</span>
                           </Link>
                         </li>
                         <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
@@ -143,7 +143,7 @@ export function NavBottom() {
                             href="/catalog/Men/Clothing?p=1"
                             onClick={() => setOpen(!open)}
                           >
-                            Ropa
+                            <span className="w-full">Ropa</span>
                           </Link>
                         </li>
                         <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
@@ -151,7 +151,7 @@ export function NavBottom() {
                             href="/catalog/Accessories/Men?p=1"
                             onClick={() => setOpen(!open)}
                           >
-                            Accesorios
+                            <span className="w-full">Accesorios</span>
                           </Link>
                         </li>
                       </ul>
@@ -164,8 +164,12 @@ export function NavBottom() {
                         aria-expanded="false"
                         aria-controls="dashboardCollapse"
                       >
-                        <Link href="/mujer" onClick={() => setOpen(!open)}>
-                          <span className="ml-2 font-bold text-base cursor-pointer">
+                        <Link
+                          href="/mujer"
+                          className="bg-green-300 w-full h-full"
+                          onClick={() => setOpen(!open)}
+                        >
+                          <span className="ml-2 font-bold text-base cursor-pointer w-full ">
                             Mujer
                           </span>
                         </Link>
@@ -176,15 +180,15 @@ export function NavBottom() {
                             href="/catalog/Women/Shoes/Sneakers?q=sneakers&p=1&indices%5BSTAGING_pwa_ecom_ui_template_products_query_suggestions%5D%5Bpage%5D=1"
                             onClick={() => setOpen(!open)}
                           >
-                            Zapatillas
+                            <span className="w-full">Zapatillas</span>
                           </Link>
                         </li>
                         <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
                           <Link
-                            href="/catalog/Women/Clothing?p=1"
+                            href="/catalog/Women"
                             onClick={() => setOpen(!open)}
                           >
-                            Ropa
+                            <span className="w-full"> Ropa</span>
                           </Link>
                         </li>
                         <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
@@ -192,7 +196,7 @@ export function NavBottom() {
                             href="/catalog/Accessories/Women?p=1"
                             onClick={() => setOpen(!open)}
                           >
-                            Accesorios
+                            <span className="w-full"> Accesorios</span>
                           </Link>
                         </li>
                       </ul>

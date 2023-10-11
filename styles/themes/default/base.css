@@ -29,7 +29,7 @@
   }
 
   ::selection {
-    @apply bg-brand-black text-white;
+    @apply bg-black text-white;
   }
 
   #__next {

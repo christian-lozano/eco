@@ -55,7 +55,7 @@ export const Dropdown = forwardRef<HTMLDivElement, DropdownProps>(
           className={classNames(
             'w-full small-bold flex items-center justify-between px-2 py-1.5 border rounded-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-uranus-base',
             {
-              'bg-brand-black border-neutral-light text-white hover:text-neutral-light':
+              'bg-black border-neutral-light text-white hover:text-neutral-light':
                 isOpen,
               'bg-white border-neutral-dark hover:text-brand-black hover:bg-neutral-lightest':
                 !isOpen,
