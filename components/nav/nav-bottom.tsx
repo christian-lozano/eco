@@ -30,15 +30,15 @@ export function NavBottom() {
       {currentCategory === 'Women' && (
         <NavItem label="Bags" href={`/catalog/${currentCategory}/Bags`} />
       )}
-      <NavItem label="Ropa" href={`/catalog/${currentCategory}/Clothing`} />
-      <NavItem label="Zapatos" href={`/catalog/${currentCategory}/Shoes`} />
+      <NavItem label="Clothing" href={`/catalog/${currentCategory}/Clothing`} />
+      <NavItem label="Shoes" href={`/catalog/${currentCategory}/Shoes`} />
     </>
   )
 
   const accessoriesSubCategories = (
     <>
-      <NavItem label="Hombre" href={`/catalog/${currentCategory}/Men`} />
-      <NavItem label="Mujer" href={`/catalog/${currentCategory}/Women`} />
+      <NavItem label="Clothing" href={`/catalog/${currentCategory}/Men`} />
+      <NavItem label="Shoes" href={`/catalog/${currentCategory}/Women`} />
     </>
   )
 
@@ -177,7 +177,7 @@ export function NavBottom() {
                       <ul className="collapse" id="dashboardCollapse">
                         <li className="flex px-6 py-2 font-medium text-black transition-transform transform hover:translate-x-5 translate-x-3">
                           <Link
-                            href="/catalog/Women/Shoes/Sneakers?q=sneakers&p=1&indices%5BSTAGING_pwa_ecom_ui_template_products_query_suggestions%5D%5Bpage%5D=1"
+                            href="/catalog/Women"
                             onClick={() => setOpen(!open)}
                           >
                             <span className="w-full">Zapatillas</span>
