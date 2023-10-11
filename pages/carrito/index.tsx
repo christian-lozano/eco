@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Configure } from 'react-instantsearch-core'
 
+import { ProductCardHitShowcase } from '@/components/product-card/product-card-hit'
 import { ProductsShowcase } from '@/components/products-showcase/products-showcase'
 import type { SearchPageLayoutProps } from '@/layouts/search-page-layout'
 import {
