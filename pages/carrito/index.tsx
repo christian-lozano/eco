@@ -10,7 +10,7 @@ export default function index() {
           <div className="justify-between mb-6 rounded-lg bg-white  shadow-md flex sm:justify-start">
             <img
               src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/380190/24/sv01/fnd/EEA/fmt/png/Zapatillas-CA-Pro-Classic"
-              alt="product-image"
+              alt="product"
               className="rounded-lg sm:w-40 w-40  xl:w-52 2xl:w-64"
             />
             <div className="2xl:ml-10 sm:ml-4 sm:flex sm:w-full sm:justify-between">
