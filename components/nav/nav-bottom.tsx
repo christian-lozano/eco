@@ -30,15 +30,15 @@ export function NavBottom() {
       {currentCategory === 'Women' && (
         <NavItem label="Bags" href={`/catalog/${currentCategory}/Bags`} />
       )}
-      <NavItem label="Clothing" href={`/catalog/${currentCategory}/Clothing`} />
-      <NavItem label="Shoes" href={`/catalog/${currentCategory}/Shoes`} />
+      <NavItem label="Ropa" href={`/catalog/${currentCategory}/Clothing`} />
+      <NavItem label="Zapatos" href={`/catalog/${currentCategory}/Shoes`} />
     </>
   )
 
   const accessoriesSubCategories = (
     <>
-      <NavItem label="Men" href={`/catalog/${currentCategory}/Men`} />
-      <NavItem label="Women" href={`/catalog/${currentCategory}/Women`} />
+      <NavItem label="Hombre" href={`/catalog/${currentCategory}/Men`} />
+      <NavItem label="Mujer" href={`/catalog/${currentCategory}/Women`} />
     </>
   )
 
@@ -124,7 +124,7 @@ export function NavBottom() {
                         aria-controls="dashboardCollapse"
                       >
                         <Link href="/hombre" onClick={() => setOpen(!open)}>
-                          <span className="ml-2 font-bold text-base cursor-pointer">
+                          <span className="ml-2 font-bold text-base cursor-pointer w-full">
                             Hombre
                           </span>
                         </Link>
@@ -210,7 +210,7 @@ export function NavBottom() {
                         aria-controls="dashboardCollapse"
                       >
                         <Link href="/ninos">
-                          <span className="ml-2 font-bold w-full h-full text-base cursor-pointer">
+                          <span className="ml-2 font-bold w-full h-full text-base cursor-pointer w-full">
                             Niños
                           </span>
                         </Link>

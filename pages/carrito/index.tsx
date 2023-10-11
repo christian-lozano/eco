@@ -1,9 +1,8 @@
 import Link from 'next/link'
-import React from 'react'
 
 export default function index() {
   return (
-    <div className="  py-16">
+    <div className="py-16">
       <h1 className="mb-10 text-center text-2xl font-bold">CARRITO</h1>
       <div className="mx-auto max-w-5xl 2xl:max-w-7xl justify-center px-1 md:flex md:space-x-6 xl:px-0">
         <div className="rounded-lg md:w-2/3">
@@ -37,8 +36,7 @@ export default function index() {
               <div className="mt-4 flex xl:p-6 md:py-6 justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6">
                 <div className="flex items-center border-gray-100">
                   <span className="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-blue-500 hover:text-blue-50">
-                    {' '}
-                    -{' '}
+                    -
                   </span>
                   <input
                     className="h-8 w-8 border bg-white text-center text-xs outline-none"
@@ -47,8 +45,7 @@ export default function index() {
                     min="1"
                   />
                   <span className="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100 hover:bg-blue-500 hover:text-blue-50">
-                    {' '}
-                    +{' '}
+                    +
                   </span>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -101,8 +98,7 @@ export default function index() {
               <div className="mt-4 flex xl:p-6 md:py-6 justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6">
                 <div className="flex items-center border-gray-100">
                   <span className="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-blue-500 hover:text-blue-50">
-                    {' '}
-                    -{' '}
+                    -
                   </span>
                   <input
                     className="h-8 w-8 border bg-white text-center text-xs outline-none"
@@ -111,8 +107,7 @@ export default function index() {
                     min="1"
                   />
                   <span className="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100 hover:bg-blue-500 hover:text-blue-50">
-                    {' '}
-                    +{' '}
+                    +
                   </span>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -135,7 +130,6 @@ export default function index() {
               </div>
             </div>
           </div>
-          {/*  */}
           <div className="justify-between mb-6 rounded-lg bg-white  shadow-md flex sm:justify-start">
             <img
               src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/379300/01/sv01/fnd/EEA/fmt/png/Zapatillas-de-baloncesto-All-Pro-NITRO-Scoot"
@@ -165,8 +159,7 @@ export default function index() {
               <div className="mt-4 flex xl:p-6 md:py-6 justify-between sm:space-y-6 sm:mt-0 sm:block sm:space-x-6">
                 <div className="flex items-center border-gray-100">
                   <span className="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-blue-500 hover:text-blue-50">
-                    {' '}
-                    -{' '}
+                    -
                   </span>
                   <input
                     className="h-8 w-8 border bg-white text-center text-xs outline-none"
@@ -175,8 +168,7 @@ export default function index() {
                     min="1"
                   />
                   <span className="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100 hover:bg-blue-500 hover:text-blue-50">
-                    {' '}
-                    +{' '}
+                    +
                   </span>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -220,7 +212,7 @@ export default function index() {
           </div>
           <div className="fixed md:relative bottom-0 w-full flex justify-center left-0">
             <Link href={'/pagar'} className="w-full">
-              <span className="mt-6 w-full text-center text-lg  bg-[#ae946d] py-3  font-bold text-white hover:bg-[#b99d73]">
+              <span className="mt-6 w-full text-center text-lg  bg-[#ae946d] py-3 xl:py-1.5 font-bold text-white hover:bg-[#b99d73]">
                 PAGAR
               </span>
             </Link>
