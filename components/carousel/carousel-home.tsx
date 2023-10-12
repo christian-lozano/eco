@@ -22,7 +22,7 @@ export default function CarouselHome() {
 
   return (
     <div>
-      <div className="block laptop:hidden">
+      <div className="block xl:hidden">
         <Carousel
           // autoplay={true}
           autoplay={true}
@@ -63,7 +63,7 @@ export default function CarouselHome() {
         </div>
       </div>
       {/* desktop */}
-      <div className="hidden laptop:block">
+      <div className="hidden xl:block">
         <Carousel
           autoplay={true}
           autoplayInterval={10000}

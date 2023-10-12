@@ -22,7 +22,12 @@ export default function Home(props: SearchPageLayoutProps) {
         enablePersonalization={false}
         userToken={undefined}
       />
+      {/* 
+monto card add mb 
+boton close mas grande
+slider desaparece porque voy a carrito
 
+*/}
       {/* <Banner
         size="xl"
         title="New<br />Collection"
