@@ -24,7 +24,7 @@ const dataHeader = [
     id: 'mujer',
     titulo: 'Mujer',
     url: 'mujer',
-    infoNav: [  
+    infoNav: [
       {
         titulo: 'Producto destacado',
         categoria: [
@@ -342,7 +342,7 @@ export const NavTop = memo(function NavTop() {
       {/* /*---------------------------------*/
       /* Desktop menu*/
       /* ---------------------------------*/}
-      <div className="hidden 2xl:block">
+      <div className="hidden xl:block">
         <nav>
           <div>
             <div>
@@ -915,7 +915,7 @@ export const NavTop = memo(function NavTop() {
       {/* /*---------------------------------*/
       /* mobile menu*/
       /* ---------------------------------*/}
-      <div className="2xl:hidden flex flex-col px-4 py-2 border-b border-neutral-light laptop:mx-20 laptop:px-0 laptop:pt-8 laptop:pb-0 laptop:mb-5">
+      <div className="xl:hidden flex flex-col px-4 py-2 border-b border-neutral-light laptop:mx-20 laptop:px-0 laptop:pt-8 laptop:pb-0 laptop:mb-5">
         <div className="flex justify-between w-full gap-3 laptop:mb-8">
           <div className="flex items-center xl:hidden">
             <Logo />
