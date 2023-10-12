@@ -10,7 +10,7 @@ export function Nav() {
     <nav>
       {/* <NavHome /> */}
       <NavTop />
-      <div className=" absolute  right-0 w-full xl:w-2/5 xl:mt-2 xl:-z-dev">
+      <div className=" absolute 2xl:bg-transparent xl:bg-transparent  bg-white right-0 w-full xl:w-2/5 xl:mt-2 xl:-z-dev">
         <NavBottom />
       </div>
     </nav>
