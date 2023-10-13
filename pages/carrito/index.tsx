@@ -14,7 +14,7 @@ export default function Home(props: SearchPageLayoutProps) {
         <h1 className="mb-10 text-center text-2xl font-bold">CARRITO</h1>
         <div className="mx-auto max-w-5xl 2xl:max-w-7xl justify-center px-1 md:flex md:space-x-6 xl:px-0">
           <div className="rounded-lg md:w-2/3">
-            {/* pruductos */}
+            {/* pruductos  carrito*/}
             <div className="justify-between mb-6 rounded-lg bg-white  shadow-md flex sm:justify-start">
               <img
                 src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/380190/24/sv01/fnd/EEA/fmt/png/Zapatillas-CA-Pro-Classic"
