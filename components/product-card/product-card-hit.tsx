@@ -26,8 +26,10 @@ export function ProductCardHitComponent({
   highlighting = true,
   snipetting = true,
 }: ProductCardHitProps) {
+  // console.log(hit) data
   const product: ProductCardProps = {
     url: `/product/${hit.objectID}?queryID=${hit.__queryID}`,
+
     image: hit.image_urls[0],
     tags: [],
     colors: [],
