@@ -26,7 +26,7 @@ export function ProductCardHitComponent({
   highlighting = true,
   snipetting = true,
 }: ProductCardHitProps) {
-  // console.log(hit) data
+  // console.log(hit)
   const product: ProductCardProps = {
     url: `/product/${hit.objectID}?queryID=${hit.__queryID}`,
 
