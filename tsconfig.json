@@ -20,6 +20,6 @@
     },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/nav/nav-home.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/nav/nav-home.tsx", "store/store.tsx"],
   "exclude": ["node_modules"]
 }

@@ -6,11 +6,10 @@ import Script from 'next/script'
 import { useMemo } from 'react'
 
 /// #if DEV
-// eslint-disable-next-line import/order
-import { Dev } from '@dev/dev'
-/// #endif
 
+import { wrapper } from '@/app/store'
 import { Banner } from '@/components/banner/banner'
+/// #endif
 import type { FooterProps } from '@/components/footer/footer'
 import type { HeaderProps } from '@/components/header/header'
 import { Loader } from '@/components/loader/loader'
@@ -18,6 +17,8 @@ import { Overlay } from '@/components/overlay/overlay'
 import { AppLayout } from '@/layouts/app-layout'
 import { gaTrackingId, isDev, isProd } from '@/utils/env'
 import { scrollToTop } from '@/utils/scrollToTop'
+import { Dev } from '@dev/dev'
+
 import '@/styles/_index.css'
 
 export const Header = dynamic<HeaderProps>(() =>
@@ -32,7 +33,7 @@ export const Footer = dynamic<FooterProps>(() =>
   )
 )
 
-export default function App({ Component, pageProps, router }: AppProps) {
+function App({ Component, pageProps, router }: AppProps) {
   const isCatalogPage = useMemo(
     () => router?.pathname === '/catalog/[[...slugs]]',
     [router?.pathname]
@@ -85,3 +86,4 @@ export default function App({ Component, pageProps, router }: AppProps) {
     </AppLayout>
   )
 }
+export default wrapper.withRedux(App)
