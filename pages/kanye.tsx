@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import { Button } from '@/components/@ui/button/button'
+
 import { useAppDispatch, useAppSelector } from '../app/hooks'
 import { decrement, increment, incrementByAmount } from '../features/counter'
 
@@ -22,15 +24,15 @@ export default function Home() {
           type="number"
           onChange={(e) => setIncrementAmount(Number(e.target.value))}
         />
-        <button
+        <Button
           onClick={() => dispatch(incrementByAmount(Number(incrementAmount)))}
         >
           Increment by amount
-        </button>
+        </Button>
       </div>
       <div>
-        <button onClick={() => dispatch(decrement())}>Decrement by 1</button>
-        <button onClick={() => dispatch(increment())}>Increment by 1</button>
+        <Button onClick={() => dispatch(decrement())}>Decrement by 1</Button>
+        <Button onClick={() => dispatch(increment())}>Increment by 1</Button>
       </div>
     </>
   )
