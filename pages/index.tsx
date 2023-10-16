@@ -69,7 +69,7 @@ export const getServerSideProps = wrapper.getServerSideProps(
   (store) =>
     async ({ query }) => {
       // console.log('store state on the server before dispatch', store.getState())
-      store.dispatch(setProfileData('mihai'))
+      await store.dispatch(setProfileData('mihai'))
       // console.log('store state on the server after dispatch', store.getState())
 
       const data = query.data || 'default data'
