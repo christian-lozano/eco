@@ -1,4 +1,4 @@
-import type { Action, AnyAction, ThunkAction } from '@reduxjs/toolkit'
+import type { Action, ThunkAction } from '@reduxjs/toolkit'
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import { createWrapper, HYDRATE } from 'next-redux-wrapper'
 
@@ -8,10 +8,7 @@ const combinedReducer = combineReducers({
   counter: counterReducer,
 })
 
-const reducer = (
-  state: ReturnType<typeof combinedReducer>,
-  action: AnyAction
-) => {
+const reducer: typeof combinedReducer = (state, action) => {
   if (action.type === HYDRATE) {
     const nextState = {
       ...state, // use previous state
