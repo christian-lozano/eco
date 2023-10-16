@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import { connect } from 'react-redux'
 
 import { wrapper } from 'app/store'
@@ -19,16 +18,7 @@ function Product(props: any) {
       <main className="row">
         <h1 className="text-center">Product name: {product?.name}</h1>
         {/* <h3>Profile: {profile?.name}</h3> */}
-        <p>
-          Go to{' '}
-          <Link href="/">
-            <a>Home page</a>
-          </Link>{' '}
-          {' | '}
-          <Link href="/profile">
-            <a>Profile</a>
-          </Link>
-        </p>
+        <p>Go to </p>
 
         <p>Product, {props.productData}!</p>
       </main>
