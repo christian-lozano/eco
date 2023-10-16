@@ -7,7 +7,6 @@ import { Drawer, IconButton } from '@material-tailwind/react'
 import dynamic from 'next/dynamic'
 import { memo, useEffect, useState } from 'react'
 
-import { useAppSelector } from '@/app/hooks'
 import type { LogoProps } from '@/components/logo/logo'
 import { Tablet, Laptop } from '@/lib/media'
 import { Button } from '@ui/button/button'
@@ -337,7 +336,7 @@ export const NavTop = memo(function NavTop() {
     setAndler(true)
     setHoverMenu(dataHeader[index].infoNav)
   }
-  const { value } = useAppSelector((state) => state.counter)
+
   return (
     <div>
       {/* /*---------------------------------*/
@@ -347,7 +346,6 @@ export const NavTop = memo(function NavTop() {
         <nav>
           <div>
             <div>
-              {value}
               <div
                 className={` w-[100%] relative bg-[var(--dark-mode)] px-10 z-50`}
               >
