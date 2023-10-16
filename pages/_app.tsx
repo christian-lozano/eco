@@ -5,8 +5,7 @@ import Head from 'next/head'
 import Script from 'next/script'
 import { useMemo } from 'react'
 
-/// #if DEV
-
+/// #ifDEV
 import { wrapper } from '@/app/store'
 import { Banner } from '@/components/banner/banner'
 /// #endif
@@ -38,7 +37,6 @@ function App({ Component, pageProps, router }: AppProps) {
     () => router?.pathname === '/catalog/[[...slugs]]',
     [router?.pathname]
   )
-
   return (
     <AppLayout>
       <Head>
