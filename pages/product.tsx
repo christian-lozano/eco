@@ -1,14 +1,13 @@
-import type { AppState } from 'app/store'
-import { wrapper } from 'app/store'
-import { fetchProduct } from 'app/store/slices/product'
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { connect } from 'react-redux'
 
-const Product: NextPage = (props: any) => {
-  const { product, profile } = props
+import { wrapper } from 'app/store'
+import type { AppState } from 'app/store'
+import { fetchProduct } from 'app/store/slices/product'
 
+function Product(props: any) {
+  const { product } = props
   return (
     <div className="container">
       <Head>
@@ -19,7 +18,7 @@ const Product: NextPage = (props: any) => {
 
       <main className="row">
         <h1 className="text-center">Product name: {product?.name}</h1>
-        <h3>Profile: {profile?.name}</h3>
+        {/* <h3>Profile: {profile?.name}</h3> */}
         <p>
           Go to{' '}
           <Link href="/">

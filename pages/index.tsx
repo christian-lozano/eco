@@ -68,9 +68,9 @@ slider desaparece porque voy a carrito
 export const getServerSideProps = wrapper.getServerSideProps(
   (store) =>
     async ({ query }) => {
-      console.log('store state on the server before dispatch', store.getState())
+      // console.log('store state on the server before dispatch', store.getState())
       store.dispatch(setProfileData('mihai'))
-      console.log('store state on the server after dispatch', store.getState())
+      // console.log('store state on the server after dispatch', store.getState())
 
       const data = query.data || 'default data'
       //  http://localhost:3000?data='some-data'

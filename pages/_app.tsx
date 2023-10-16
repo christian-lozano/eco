@@ -5,10 +5,8 @@ import Head from 'next/head'
 import Script from 'next/script'
 import { useMemo } from 'react'
 
-import { wrapper } from '@/app/store/index'
-
 /// #ifDEV
-
+import { wrapper } from '@/app/store/index'
 import { Banner } from '@/components/banner/banner'
 /// #endif
 import type { FooterProps } from '@/components/footer/footer'
