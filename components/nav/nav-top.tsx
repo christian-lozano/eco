@@ -650,8 +650,7 @@ export const NavTop = memo(function NavTop() {
               {/* /*---------------------------------*/
               /* CARRITO Nav*/
               /* --------------------------------*/}
-
-              {/* menu Mobile */}
+              {/* menu Mobil */}
             </div>
           </div>
         </div>
