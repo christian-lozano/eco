@@ -12,6 +12,7 @@ import type { ProductDetailProps } from './product-detail'
 export type ProductDetailHitProps = HitComponentProps<ProductHit>
 
 export function ProductDetailHit({ hit }: ProductDetailHitProps) {
+
   const product: ProductDetailProps = {
     image: hit.image_urls,
     label: hit.brand,
@@ -64,7 +65,7 @@ export function ProductDetailHit({ hit }: ProductDetailHitProps) {
       {
         index: indexName,
         eventName: queryID
-          ? 'PDP: Product Added to Cart after Search'
+          ? 'PDP: Product Added to Cart'
           : 'PDP: Product Added to Cart',
         objectIDs: [hit.objectID],
         queryID,

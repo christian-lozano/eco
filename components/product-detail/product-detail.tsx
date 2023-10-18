@@ -1,6 +1,7 @@
 import ShoppingBagIcon from '@material-design-icons/svg/outlined/shopping_bag.svg'
 import type { MouseEvent, MouseEventHandler } from 'react'
 import { useCallback } from 'react'
+import { useCart } from 'react-use-cart'
 
 import { ProductDescription } from '@/components/product/product-description'
 import { ProductLabel } from '@/components/product/product-label'
@@ -64,6 +65,7 @@ export function ProductDetail({
   //   () => setIsFavorite((favorite) => !favorite),
   //   []
   // )
+  const { addItem } = useCart()
 
   const handleCheckoutClick = useCallback(
     (e: MouseEvent<HTMLButtonElement>) => {
@@ -129,8 +131,8 @@ export function ProductDetail({
           type="primary"
           size="large"
           className="w-full mt-6"
-          disabled={!available}
-          onClick={handleCheckoutClick}
+          disabled={available}
+          onClick={() => addItem({ id: label, img: image, title, price })}
         >
           <IconLabel
             icon={ShoppingBagIcon}
