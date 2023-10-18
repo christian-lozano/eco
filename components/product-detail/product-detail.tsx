@@ -1,6 +1,5 @@
 import ShoppingBagIcon from '@material-design-icons/svg/outlined/shopping_bag.svg'
-import type { MouseEvent, MouseEventHandler } from 'react'
-import { useCallback } from 'react'
+import type { MouseEventHandler } from 'react'
 import { useCart } from 'react-use-cart'
 
 import { ProductDescription } from '@/components/product/product-description'
@@ -59,8 +58,8 @@ export function ProductDetail({
   originalPrice,
   currency,
   popular,
-  onCheckoutClick,
-}: ProductDetailProps) {
+}: // onCheckoutClick,
+ProductDetailProps) {
   // const [isFavorite, setIsFavorite] = useState(false)
   // const handleFavoriteClick = useCallback(
   //   () => setIsFavorite((favorite) => !favorite),
@@ -68,12 +67,12 @@ export function ProductDetail({
   // )
   const { addItem } = useCart()
 
-  const handleCheckoutClick = useCallback(
-    (e: MouseEvent<HTMLButtonElement>) => {
-      if (typeof onCheckoutClick === 'function') onCheckoutClick(e)
-    },
-    [onCheckoutClick]
-  )
+  // const handleCheckoutClick = useCallback(
+  //   (e: MouseEvent<HTMLButtonElement>) => {
+  //     if (typeof onCheckoutClick === 'function') onCheckoutClick(e)
+  //   },
+  //   [onCheckoutClick]
+  // )
 
   return (
     <div className="flex flex-col gap-6 mb-12 laptop:my-8 laptop:flex-row">
