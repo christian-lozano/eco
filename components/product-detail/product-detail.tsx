@@ -1,5 +1,4 @@
 import ShoppingBagIcon from '@material-design-icons/svg/outlined/shopping_bag.svg'
-import type { MouseEventHandler } from 'react'
 import { useCart } from 'react-use-cart'
 
 import { ProductDescription } from '@/components/product/product-description'
@@ -31,7 +30,7 @@ export type ProductDetailProps = {
   currency?: ProductPriceCurrency
   popular?: boolean
 
-  onCheckoutClick?: MouseEventHandler<HTMLButtonElement>
+  // onCheckoutClick?: MouseEventHandler<HTMLButtonElement>
 }
 
 // export type ProductDetailRatingProps = Pick<ProductDetailProps, 'reviews'>
