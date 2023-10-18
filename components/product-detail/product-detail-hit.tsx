@@ -12,7 +12,6 @@ import type { ProductDetailProps } from './product-detail'
 export type ProductDetailHitProps = HitComponentProps<ProductHit>
 
 export function ProductDetailHit({ hit }: ProductDetailHitProps) {
-
   const product: ProductDetailProps = {
     image: hit.image_urls,
     label: hit.brand,
