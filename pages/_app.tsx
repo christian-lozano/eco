@@ -37,8 +37,8 @@ export default function App({ Component, pageProps, router }: AppProps) {
     [router?.pathname]
   )
   return (
-    <CartProvider>
-      <AppLayout>
+    <AppLayout>
+      <CartProvider>
         <Head>
           <title>Fritz Sport</title>
           <meta
@@ -81,7 +81,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <Overlay />
 
         {isDev && <Dev />}
-      </AppLayout>
-    </CartProvider>
+      </CartProvider>
+    </AppLayout>
   )
 }
