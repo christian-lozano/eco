@@ -6,7 +6,6 @@ import Script from 'next/script'
 import { useMemo } from 'react'
 import { CartProvider } from 'react-use-cart'
 
-import { wrapper } from '@/app/store'
 /// #ifDEV
 import { Banner } from '@/components/banner/banner'
 /// #endif
@@ -32,7 +31,7 @@ export const Footer = dynamic<FooterProps>(() =>
   )
 )
 
-function App({ Component, pageProps, router }: AppProps) {
+export default function App({ Component, pageProps, router }: AppProps) {
   const isCatalogPage = useMemo(
     () => router?.pathname === '/catalog/[[...slugs]]',
     [router?.pathname]
@@ -86,4 +85,3 @@ function App({ Component, pageProps, router }: AppProps) {
     </CartProvider>
   )
 }
-export default wrapper.withRedux(App)

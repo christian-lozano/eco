@@ -1,7 +1,5 @@
 import { Configure } from 'react-instantsearch-dom'
 
-import { wrapper } from '@/app/store'
-import { setProfileData } from '@/app/store/slices/profile'
 import { BannerPromociones } from '@/components/body-home/banner-promociones'
 import { CategoriasGenero } from '@/components/body-home/categorias-genero'
 import CarouselHome from '@/components/carousel/carousel-home'
@@ -9,9 +7,12 @@ import { CarouselMarcasHome } from '@/components/carousel/carousel-marcas-home'
 import { ProductCardHitShowcase } from '@/components/product-card/product-card-hit'
 import { ProductsShowcase } from '@/components/products-showcase/products-showcase'
 import type { SearchPageLayoutProps } from '@/layouts/search-page-layout'
-import { SearchPageLayout } from '@/layouts/search-page-layout'
+import {
+  SearchPageLayout,
+  getStaticPropsPage,
+} from '@/layouts/search-page-layout'
 
-function Home(props: SearchPageLayoutProps) {
+export default function Home(props: SearchPageLayoutProps) {
   return (
     <SearchPageLayout {...props}>
       <Configure
@@ -65,22 +66,4 @@ slider desaparece porque voy a carrito
   )
 }
 
-export const getServerSideProps = wrapper.getServerSideProps(
-  (store) =>
-    async ({ query }) => {
-      // console.log('store state on the server before dispatch', store.getState())
-      await store.dispatch(setProfileData('mihai'))
-      // console.log('store state on the server after dispatch', store.getState())
-
-      const data = query.data || 'default data'
-      //  http://localhost:3000?data='some-data'
-
-      return {
-        props: {
-          data,
-        }, // will be passed to the page component as props
-      }
-    }
-)
-
-export default Home
+export const getStaticProps = () => getStaticPropsPage(Home)
