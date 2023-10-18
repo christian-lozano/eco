@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Script from 'next/script'
 import { useMemo } from 'react'
+import { CartProvider } from 'react-use-cart'
 
 /// #ifDEV
 import { Banner } from '@/components/banner/banner'
@@ -37,48 +38,50 @@ export default function App({ Component, pageProps, router }: AppProps) {
   )
   return (
     <AppLayout>
-      <Head>
-        <title>Fritz Sport</title>
-        <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover"
-        />
-      </Head>
-
-      {/* Google Analytics */}
-      {isProd && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}
-            strategy="afterInteractive"
+      <CartProvider>
+        <Head>
+          <title>Fritz Sport</title>
+          <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover"
           />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
+        </Head>
+
+        {/* Google Analytics */}
+        {isProd && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){window.dataLayer.push(arguments);}
               gtag('js', new Date());
 
               gtag('config', '${gaTrackingId}');
             `}
-          </Script>
-        </>
-      )}
+            </Script>
+          </>
+        )}
 
-      <Banner size="xs-large" className="z-header bg-black" fullWidth={true}>
-        20% de Descuento! Solo por este mes*
-      </Banner>
-      <Header />
+        <Banner size="xs-large" className="z-header bg-black" fullWidth={true}>
+          20% de Descuento! Solo por este mes*
+        </Banner>
+        <Header />
 
-      <AnimatePresence exitBeforeEnter={true} onExitComplete={scrollToTop}>
-        <Component {...pageProps} key={router.route} />
-      </AnimatePresence>
+        <AnimatePresence exitBeforeEnter={true} onExitComplete={scrollToTop}>
+          <Component {...pageProps} key={router.route} />
+        </AnimatePresence>
 
-      <Footer />
+        <Footer />
 
-      <Loader layout={isCatalogPage ? 'bar' : 'overlay'} />
-      <Overlay />
+        <Loader layout={isCatalogPage ? 'bar' : 'overlay'} />
+        <Overlay />
 
-      {isDev && <Dev />}
+        {isDev && <Dev />}
+      </CartProvider>
     </AppLayout>
   )
 }
