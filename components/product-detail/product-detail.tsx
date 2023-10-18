@@ -29,7 +29,6 @@ export type ProductDetailProps = {
   originalPrice?: number
   currency?: ProductPriceCurrency
   popular?: boolean
-
   // onCheckoutClick?: MouseEventHandler<HTMLButtonElement>
 }
 
