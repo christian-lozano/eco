@@ -720,9 +720,9 @@ export const NavTop = memo(function NavTop() {
                         <div className="flex items-center border-gray-100">
                           <Button
                             className="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-blue-500 hover:text-blue-50"
-                            onClick={() =>
-                              updateItemQuantity(el.id, el.quantity - 1)
-                            }
+                            // onClick={() =>
+                            //   updateItemQuantity(el.id, el.quantity - 1)
+                            // }
                           >
                             {' '}
                             -{' '}
@@ -734,9 +734,9 @@ export const NavTop = memo(function NavTop() {
                           />
                           <Button
                             className="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100 hover:bg-blue-500 hover:text-blue-50"
-                            onClick={() =>
-                              updateItemQuantity(el.id, el.quantity + 1)
-                            }
+                            // onClick={() =>
+                            //   updateItemQuantity(el.id, el.quantity + 1)
+                            // }
                           >
                             {' '}
                             +{' '}
