@@ -15,7 +15,7 @@ export default function Home(props: SearchPageLayoutProps) {
   useEffect(() => {
     setDomLoaded(true)
   }, [])
-  const { items, removeItem, updateItemQuantity, cartTotal } = useCart()
+  const { items, removeItem, cartTotal } = useCart()
   return (
     <SearchPageLayout {...props}>
       <div className="  py-16">
