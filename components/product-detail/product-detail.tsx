@@ -31,6 +31,7 @@ export type ProductDetailProps = {
   originalPrice?: number
   currency?: ProductPriceCurrency
   popular?: boolean
+
   onCheckoutClick?: MouseEventHandler<HTMLButtonElement>
 }
 
@@ -127,12 +128,21 @@ export function ProductDetail({
           />
         )}
         {sizes && sizes.length > 0 && <ProductSizes sizes={sizes} />}
+
         <Button
           type="primary"
           size="large"
           className="w-full mt-6"
           disabled={available}
-          onClick={() => addItem({ id: label, img: image, title, price })}
+          onClick={() =>
+            addItem({
+              img: image,
+              title,
+              precio: price,
+              id: String(label),
+              price: 0,
+            })
+          }
         >
           <IconLabel
             icon={ShoppingBagIcon}
