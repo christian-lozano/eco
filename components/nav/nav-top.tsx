@@ -320,8 +320,7 @@ export const NavTop = memo(function NavTop() {
   useEffect(() => {
     setDomLoaded(true)
   }, [])
-  const { items, removeItem, updateItemQuantity, cartTotal, totalItems } =
-    useCart()
+  const { items, removeItem, cartTotal, totalItems } = useCart()
 
   const [openCart, setOpen] = useState(false)
 
