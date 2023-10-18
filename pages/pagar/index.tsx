@@ -9,7 +9,7 @@ import {
 } from '@/layouts/search-page-layout'
 
 export default function Home(props: SearchPageLayoutProps) {
-  const { items, cartTotal, totalItems } = useCart()
+  const { items, cartTotal } = useCart()
 
   const [domLoaded, setDomLoaded] = useState(false)
 
